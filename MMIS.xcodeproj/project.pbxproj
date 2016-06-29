@@ -11,12 +11,51 @@
 		CE441C8C1D24395D009B7257 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE441C8B1D24395D009B7257 /* AppDelegate.m */; };
 		CE441C8F1D24395D009B7257 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE441C8E1D24395D009B7257 /* ViewController.m */; };
 		CE441C921D24395D009B7257 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE441C901D24395D009B7257 /* Main.storyboard */; };
-		CE441C951D24395E009B7257 /* MMIS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE441C931D24395E009B7257 /* MMIS.xcdatamodeld */; };
 		CE441C971D24395E009B7257 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE441C961D24395E009B7257 /* Assets.xcassets */; };
 		CE441C9A1D24395E009B7257 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE441C981D24395E009B7257 /* LaunchScreen.storyboard */; };
+		CE441CB21D243AFF009B7257 /* LeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE441CAF1D243AFF009B7257 /* LeftMenuViewController.m */; };
+		CE441CB31D243AFF009B7257 /* TableViewCellMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = CE441CB11D243AFF009B7257 /* TableViewCellMenu.m */; };
+		CE441CC61D243B11009B7257 /* TableViewControllerClamping.m in Sources */ = {isa = PBXBuildFile; fileRef = CE441CB71D243B11009B7257 /* TableViewControllerClamping.m */; };
+		CE441CC71D243B11009B7257 /* TableViewDepartment.m in Sources */ = {isa = PBXBuildFile; fileRef = CE441CBA1D243B11009B7257 /* TableViewDepartment.m */; };
+		CE441CC81D243B11009B7257 /* TabBarTeacher.m in Sources */ = {isa = PBXBuildFile; fileRef = CE441CBC1D243B11009B7257 /* TabBarTeacher.m */; };
+		CE441CCA1D243B11009B7257 /* TableViewTeacher.m in Sources */ = {isa = PBXBuildFile; fileRef = CE441CC01D243B11009B7257 /* TableViewTeacher.m */; };
+		CE441CCB1D243B11009B7257 /* TableViewPageContTeacher.m in Sources */ = {isa = PBXBuildFile; fileRef = CE441CC31D243B11009B7257 /* TableViewPageContTeacher.m */; };
+		CE441CCC1D243B11009B7257 /* ViewControllerPageTeacher.m in Sources */ = {isa = PBXBuildFile; fileRef = CE441CC51D243B11009B7257 /* ViewControllerPageTeacher.m */; };
+		CE441CD21D243B4C009B7257 /* TableViewSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = CE441CCF1D243B4C009B7257 /* TableViewSettings.m */; };
+		CE441CD31D243B4C009B7257 /* TableViewSettingsUniversity.m in Sources */ = {isa = PBXBuildFile; fileRef = CE441CD11D243B4C009B7257 /* TableViewSettingsUniversity.m */; };
+		CE441CDB1D243B5D009B7257 /* PlanTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE441CD61D243B5D009B7257 /* PlanTableView.m */; };
+		CE441CDC1D243B5D009B7257 /* PlanViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE441CD81D243B5D009B7257 /* PlanViewCell.m */; };
+		CE441CDD1D243B5D009B7257 /* PlanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE441CDA1D243B5D009B7257 /* PlanViewController.m */; };
+		CE441CE31D243B6B009B7257 /* Favorites+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = CE441CE01D243B6B009B7257 /* Favorites+CoreDataProperties.m */; };
+		CE441CE41D243B6B009B7257 /* Favorites.m in Sources */ = {isa = PBXBuildFile; fileRef = CE441CE21D243B6B009B7257 /* Favorites.m */; };
+		CE441CE71D243B94009B7257 /* InfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE441CE61D243B94009B7257 /* InfoController.m */; };
+		CE441D051D243BB2009B7257 /* TableViewCellGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = CE441CEC1D243BB2009B7257 /* TableViewCellGraph.m */; };
+		CE441D061D243BB2009B7257 /* TableViewControllerGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = CE441CEE1D243BB2009B7257 /* TableViewControllerGraph.m */; };
+		CE441D071D243BB2009B7257 /* TableViewCellRegister.m in Sources */ = {isa = PBXBuildFile; fileRef = CE441CF11D243BB2009B7257 /* TableViewCellRegister.m */; };
+		CE441D081D243BB2009B7257 /* TableViewCellSubject.m in Sources */ = {isa = PBXBuildFile; fileRef = CE441CF31D243BB2009B7257 /* TableViewCellSubject.m */; };
+		CE441D091D243BB2009B7257 /* TableViewControllerInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = CE441CF51D243BB2009B7257 /* TableViewControllerInfo.m */; };
+		CE441D0A1D243BB2009B7257 /* TableViewControllerRegister.m in Sources */ = {isa = PBXBuildFile; fileRef = CE441CF71D243BB2009B7257 /* TableViewControllerRegister.m */; };
+		CE441D0B1D243BB2009B7257 /* TableViewRegisterContent.m in Sources */ = {isa = PBXBuildFile; fileRef = CE441CF91D243BB2009B7257 /* TableViewRegisterContent.m */; };
+		CE441D0C1D243BB2009B7257 /* TableViewControllerSelection.m in Sources */ = {isa = PBXBuildFile; fileRef = CE441CFB1D243BB2009B7257 /* TableViewControllerSelection.m */; };
+		CE441D0D1D243BB2009B7257 /* TableViewCellContent.m in Sources */ = {isa = PBXBuildFile; fileRef = CE441CFE1D243BB2009B7257 /* TableViewCellContent.m */; };
+		CE441D0E1D243BB2009B7257 /* ViewControllerPageContent.m in Sources */ = {isa = PBXBuildFile; fileRef = CE441D001D243BB2009B7257 /* ViewControllerPageContent.m */; };
+		CE441D0F1D243BB2009B7257 /* TableViewControllerFaculties.m in Sources */ = {isa = PBXBuildFile; fileRef = CE441D021D243BB2009B7257 /* TableViewControllerFaculties.m */; };
+		CE441D101D243BB2009B7257 /* TableViewControllerGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = CE441D041D243BB2009B7257 /* TableViewControllerGroup.m */; };
+		CE441D1E1D243BC5009B7257 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE441D131D243BC5009B7257 /* DataManager.m */; };
+		CE441D1F1D243BC5009B7257 /* TableViewGraphFav.m in Sources */ = {isa = PBXBuildFile; fileRef = CE441D161D243BC5009B7257 /* TableViewGraphFav.m */; };
+		CE441D201D243BC5009B7257 /* TableViewControllerSelFav.m in Sources */ = {isa = PBXBuildFile; fileRef = CE441D181D243BC5009B7257 /* TableViewControllerSelFav.m */; };
+		CE441D211D243BC5009B7257 /* TableViewFav.m in Sources */ = {isa = PBXBuildFile; fileRef = CE441D1A1D243BC5009B7257 /* TableViewFav.m */; };
+		CE441D221D243BC5009B7257 /* TableViewPageContFav.m in Sources */ = {isa = PBXBuildFile; fileRef = CE441D1D1D243BC5009B7257 /* TableViewPageContFav.m */; };
+		CE441D2B1D243BED009B7257 /* TableViewCellDept.m in Sources */ = {isa = PBXBuildFile; fileRef = CE441D281D243BED009B7257 /* TableViewCellDept.m */; };
+		CE441D2C1D243BED009B7257 /* TableViewControllerDept.m in Sources */ = {isa = PBXBuildFile; fileRef = CE441D2A1D243BED009B7257 /* TableViewControllerDept.m */; };
+		CE441D2E1D243DF2009B7257 /* libPods-MMIS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE441D2D1D243DF2009B7257 /* libPods-MMIS.a */; };
+		CE441D341D24432C009B7257 /* DGTU.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE441D321D24432C009B7257 /* DGTU.xcdatamodeld */; };
+		CE441D361D2446ED009B7257 /* TableViewHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = CE441D351D2446ED009B7257 /* TableViewHelp.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1BC8EBFA2FD324AFD6F93CCC /* Pods-MMIS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMIS.release.xcconfig"; path = "Pods/Target Support Files/Pods-MMIS/Pods-MMIS.release.xcconfig"; sourceTree = "<group>"; };
+		7EEBD2F8EBE3C16626A6ADAB /* Pods-MMIS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMIS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MMIS/Pods-MMIS.debug.xcconfig"; sourceTree = "<group>"; };
 		CE441C841D24395D009B7257 /* MMIS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MMIS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE441C881D24395D009B7257 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CE441C8A1D24395D009B7257 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -24,10 +63,83 @@
 		CE441C8D1D24395D009B7257 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		CE441C8E1D24395D009B7257 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CE441C911D24395D009B7257 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CE441C941D24395E009B7257 /* MMIS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MMIS.xcdatamodel; sourceTree = "<group>"; };
 		CE441C961D24395E009B7257 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE441C991D24395E009B7257 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE441C9B1D24395E009B7257 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE441CAA1D243ADE009B7257 /* TableViewHelp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewHelp.h; sourceTree = "<group>"; };
+		CE441CAE1D243AFF009B7257 /* LeftMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftMenuViewController.h; sourceTree = "<group>"; };
+		CE441CAF1D243AFF009B7257 /* LeftMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftMenuViewController.m; sourceTree = "<group>"; };
+		CE441CB01D243AFF009B7257 /* TableViewCellMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCellMenu.h; sourceTree = "<group>"; };
+		CE441CB11D243AFF009B7257 /* TableViewCellMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCellMenu.m; sourceTree = "<group>"; };
+		CE441CB61D243B11009B7257 /* TableViewControllerClamping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewControllerClamping.h; sourceTree = "<group>"; };
+		CE441CB71D243B11009B7257 /* TableViewControllerClamping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewControllerClamping.m; sourceTree = "<group>"; };
+		CE441CB91D243B11009B7257 /* TableViewDepartment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewDepartment.h; sourceTree = "<group>"; };
+		CE441CBA1D243B11009B7257 /* TableViewDepartment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewDepartment.m; sourceTree = "<group>"; };
+		CE441CBB1D243B11009B7257 /* TabBarTeacher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarTeacher.h; sourceTree = "<group>"; };
+		CE441CBC1D243B11009B7257 /* TabBarTeacher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarTeacher.m; sourceTree = "<group>"; };
+		CE441CBF1D243B11009B7257 /* TableViewTeacher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewTeacher.h; sourceTree = "<group>"; };
+		CE441CC01D243B11009B7257 /* TableViewTeacher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewTeacher.m; sourceTree = "<group>"; };
+		CE441CC21D243B11009B7257 /* TableViewPageContTeacher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewPageContTeacher.h; sourceTree = "<group>"; };
+		CE441CC31D243B11009B7257 /* TableViewPageContTeacher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewPageContTeacher.m; sourceTree = "<group>"; };
+		CE441CC41D243B11009B7257 /* ViewControllerPageTeacher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerPageTeacher.h; sourceTree = "<group>"; };
+		CE441CC51D243B11009B7257 /* ViewControllerPageTeacher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerPageTeacher.m; sourceTree = "<group>"; };
+		CE441CCE1D243B4C009B7257 /* TableViewSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewSettings.h; sourceTree = "<group>"; };
+		CE441CCF1D243B4C009B7257 /* TableViewSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewSettings.m; sourceTree = "<group>"; };
+		CE441CD01D243B4C009B7257 /* TableViewSettingsUniversity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewSettingsUniversity.h; sourceTree = "<group>"; };
+		CE441CD11D243B4C009B7257 /* TableViewSettingsUniversity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewSettingsUniversity.m; sourceTree = "<group>"; };
+		CE441CD51D243B5D009B7257 /* PlanTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanTableView.h; sourceTree = "<group>"; };
+		CE441CD61D243B5D009B7257 /* PlanTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanTableView.m; sourceTree = "<group>"; };
+		CE441CD71D243B5D009B7257 /* PlanViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanViewCell.h; sourceTree = "<group>"; };
+		CE441CD81D243B5D009B7257 /* PlanViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanViewCell.m; sourceTree = "<group>"; };
+		CE441CD91D243B5D009B7257 /* PlanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanViewController.h; sourceTree = "<group>"; };
+		CE441CDA1D243B5D009B7257 /* PlanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanViewController.m; sourceTree = "<group>"; };
+		CE441CDF1D243B6B009B7257 /* Favorites+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Favorites+CoreDataProperties.h"; sourceTree = "<group>"; };
+		CE441CE01D243B6B009B7257 /* Favorites+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Favorites+CoreDataProperties.m"; sourceTree = "<group>"; };
+		CE441CE11D243B6B009B7257 /* Favorites.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Favorites.h; sourceTree = "<group>"; };
+		CE441CE21D243B6B009B7257 /* Favorites.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Favorites.m; sourceTree = "<group>"; };
+		CE441CE51D243B94009B7257 /* InfoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoController.h; sourceTree = "<group>"; };
+		CE441CE61D243B94009B7257 /* InfoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoController.m; sourceTree = "<group>"; };
+		CE441CEB1D243BB2009B7257 /* TableViewCellGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCellGraph.h; sourceTree = "<group>"; };
+		CE441CEC1D243BB2009B7257 /* TableViewCellGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCellGraph.m; sourceTree = "<group>"; };
+		CE441CED1D243BB2009B7257 /* TableViewControllerGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewControllerGraph.h; sourceTree = "<group>"; };
+		CE441CEE1D243BB2009B7257 /* TableViewControllerGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewControllerGraph.m; sourceTree = "<group>"; };
+		CE441CF01D243BB2009B7257 /* TableViewCellRegister.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCellRegister.h; sourceTree = "<group>"; };
+		CE441CF11D243BB2009B7257 /* TableViewCellRegister.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCellRegister.m; sourceTree = "<group>"; };
+		CE441CF21D243BB2009B7257 /* TableViewCellSubject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCellSubject.h; sourceTree = "<group>"; };
+		CE441CF31D243BB2009B7257 /* TableViewCellSubject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCellSubject.m; sourceTree = "<group>"; };
+		CE441CF41D243BB2009B7257 /* TableViewControllerInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewControllerInfo.h; sourceTree = "<group>"; };
+		CE441CF51D243BB2009B7257 /* TableViewControllerInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewControllerInfo.m; sourceTree = "<group>"; };
+		CE441CF61D243BB2009B7257 /* TableViewControllerRegister.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewControllerRegister.h; sourceTree = "<group>"; };
+		CE441CF71D243BB2009B7257 /* TableViewControllerRegister.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewControllerRegister.m; sourceTree = "<group>"; };
+		CE441CF81D243BB2009B7257 /* TableViewRegisterContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewRegisterContent.h; sourceTree = "<group>"; };
+		CE441CF91D243BB2009B7257 /* TableViewRegisterContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewRegisterContent.m; sourceTree = "<group>"; };
+		CE441CFA1D243BB2009B7257 /* TableViewControllerSelection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewControllerSelection.h; sourceTree = "<group>"; };
+		CE441CFB1D243BB2009B7257 /* TableViewControllerSelection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewControllerSelection.m; sourceTree = "<group>"; };
+		CE441CFD1D243BB2009B7257 /* TableViewCellContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCellContent.h; sourceTree = "<group>"; };
+		CE441CFE1D243BB2009B7257 /* TableViewCellContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCellContent.m; sourceTree = "<group>"; };
+		CE441CFF1D243BB2009B7257 /* ViewControllerPageContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerPageContent.h; sourceTree = "<group>"; };
+		CE441D001D243BB2009B7257 /* ViewControllerPageContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerPageContent.m; sourceTree = "<group>"; };
+		CE441D011D243BB2009B7257 /* TableViewControllerFaculties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewControllerFaculties.h; sourceTree = "<group>"; };
+		CE441D021D243BB2009B7257 /* TableViewControllerFaculties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewControllerFaculties.m; sourceTree = "<group>"; };
+		CE441D031D243BB2009B7257 /* TableViewControllerGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewControllerGroup.h; sourceTree = "<group>"; };
+		CE441D041D243BB2009B7257 /* TableViewControllerGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewControllerGroup.m; sourceTree = "<group>"; };
+		CE441D121D243BC5009B7257 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		CE441D131D243BC5009B7257 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		CE441D151D243BC5009B7257 /* TableViewGraphFav.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewGraphFav.h; sourceTree = "<group>"; };
+		CE441D161D243BC5009B7257 /* TableViewGraphFav.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewGraphFav.m; sourceTree = "<group>"; };
+		CE441D171D243BC5009B7257 /* TableViewControllerSelFav.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewControllerSelFav.h; sourceTree = "<group>"; };
+		CE441D181D243BC5009B7257 /* TableViewControllerSelFav.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewControllerSelFav.m; sourceTree = "<group>"; };
+		CE441D191D243BC5009B7257 /* TableViewFav.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewFav.h; sourceTree = "<group>"; };
+		CE441D1A1D243BC5009B7257 /* TableViewFav.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewFav.m; sourceTree = "<group>"; };
+		CE441D1C1D243BC5009B7257 /* TableViewPageContFav.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewPageContFav.h; sourceTree = "<group>"; };
+		CE441D1D1D243BC5009B7257 /* TableViewPageContFav.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewPageContFav.m; sourceTree = "<group>"; };
+		CE441D271D243BED009B7257 /* TableViewCellDept.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCellDept.h; sourceTree = "<group>"; };
+		CE441D281D243BED009B7257 /* TableViewCellDept.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCellDept.m; sourceTree = "<group>"; };
+		CE441D291D243BED009B7257 /* TableViewControllerDept.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewControllerDept.h; sourceTree = "<group>"; };
+		CE441D2A1D243BED009B7257 /* TableViewControllerDept.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewControllerDept.m; sourceTree = "<group>"; };
+		CE441D2D1D243DF2009B7257 /* libPods-MMIS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-MMIS.a"; path = "../../../Library/Developer/Xcode/DerivedData/MMIS-covhdxbjycbnpffvzmgwccumxcum/Build/Products/Debug-iphonesimulator/libPods-MMIS.a"; sourceTree = "<group>"; };
+		CE441D331D24432C009B7257 /* DGTU.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DGTU.xcdatamodel; sourceTree = "<group>"; };
+		CE441D351D2446ED009B7257 /* TableViewHelp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewHelp.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +147,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE441D2E1D243DF2009B7257 /* libPods-MMIS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22BEBDA345CB910F88AD7DB8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE441D2D1D243DF2009B7257 /* libPods-MMIS.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3A9BBC4E90FEE49F7B315DE9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7EEBD2F8EBE3C16626A6ADAB /* Pods-MMIS.debug.xcconfig */,
+				1BC8EBFA2FD324AFD6F93CCC /* Pods-MMIS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CE441C7B1D24395D009B7257 = {
 			isa = PBXGroup;
 			children = (
 				CE441C861D24395D009B7257 /* MMIS */,
 				CE441C851D24395D009B7257 /* Products */,
+				3A9BBC4E90FEE49F7B315DE9 /* Pods */,
+				22BEBDA345CB910F88AD7DB8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +192,18 @@
 		CE441C861D24395D009B7257 /* MMIS */ = {
 			isa = PBXGroup;
 			children = (
+				CE441D261D243BED009B7257 /* Department */,
+				CE441D111D243BC5009B7257 /* Favorites */,
+				CE441CE81D243BB2009B7257 /* Group */,
+				CE441CDE1D243B6B009B7257 /* Models */,
+				CE441CD41D243B5D009B7257 /* Plan */,
+				CE441CCD1D243B4C009B7257 /* Settings */,
+				CE441CB41D243B11009B7257 /* Teacher */,
+				CE441CAD1D243AFF009B7257 /* Slide */,
+				CE441CE51D243B94009B7257 /* InfoController.h */,
+				CE441CE61D243B94009B7257 /* InfoController.m */,
+				CE441CAA1D243ADE009B7257 /* TableViewHelp.h */,
+				CE441D351D2446ED009B7257 /* TableViewHelp.m */,
 				CE441C8A1D24395D009B7257 /* AppDelegate.h */,
 				CE441C8B1D24395D009B7257 /* AppDelegate.m */,
 				CE441C8D1D24395D009B7257 /* ViewController.h */,
@@ -67,8 +211,8 @@
 				CE441C901D24395D009B7257 /* Main.storyboard */,
 				CE441C961D24395E009B7257 /* Assets.xcassets */,
 				CE441C981D24395E009B7257 /* LaunchScreen.storyboard */,
+				CE441D321D24432C009B7257 /* DGTU.xcdatamodeld */,
 				CE441C9B1D24395E009B7257 /* Info.plist */,
-				CE441C931D24395E009B7257 /* MMIS.xcdatamodeld */,
 				CE441C871D24395D009B7257 /* Supporting Files */,
 			);
 			path = MMIS;
@@ -82,6 +226,202 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		CE441CAD1D243AFF009B7257 /* Slide */ = {
+			isa = PBXGroup;
+			children = (
+				CE441CAE1D243AFF009B7257 /* LeftMenuViewController.h */,
+				CE441CAF1D243AFF009B7257 /* LeftMenuViewController.m */,
+				CE441CB01D243AFF009B7257 /* TableViewCellMenu.h */,
+				CE441CB11D243AFF009B7257 /* TableViewCellMenu.m */,
+			);
+			path = Slide;
+			sourceTree = "<group>";
+		};
+		CE441CB41D243B11009B7257 /* Teacher */ = {
+			isa = PBXGroup;
+			children = (
+				CE441CB51D243B11009B7257 /* Clamping */,
+				CE441CB81D243B11009B7257 /* Department */,
+				CE441CBB1D243B11009B7257 /* TabBarTeacher.h */,
+				CE441CBC1D243B11009B7257 /* TabBarTeacher.m */,
+				CE441CBF1D243B11009B7257 /* TableViewTeacher.h */,
+				CE441CC01D243B11009B7257 /* TableViewTeacher.m */,
+				CE441CC11D243B11009B7257 /* Tima Table */,
+			);
+			path = Teacher;
+			sourceTree = "<group>";
+		};
+		CE441CB51D243B11009B7257 /* Clamping */ = {
+			isa = PBXGroup;
+			children = (
+				CE441CB61D243B11009B7257 /* TableViewControllerClamping.h */,
+				CE441CB71D243B11009B7257 /* TableViewControllerClamping.m */,
+			);
+			path = Clamping;
+			sourceTree = "<group>";
+		};
+		CE441CB81D243B11009B7257 /* Department */ = {
+			isa = PBXGroup;
+			children = (
+				CE441CB91D243B11009B7257 /* TableViewDepartment.h */,
+				CE441CBA1D243B11009B7257 /* TableViewDepartment.m */,
+			);
+			path = Department;
+			sourceTree = "<group>";
+		};
+		CE441CC11D243B11009B7257 /* Tima Table */ = {
+			isa = PBXGroup;
+			children = (
+				CE441CC21D243B11009B7257 /* TableViewPageContTeacher.h */,
+				CE441CC31D243B11009B7257 /* TableViewPageContTeacher.m */,
+				CE441CC41D243B11009B7257 /* ViewControllerPageTeacher.h */,
+				CE441CC51D243B11009B7257 /* ViewControllerPageTeacher.m */,
+			);
+			path = "Tima Table";
+			sourceTree = "<group>";
+		};
+		CE441CCD1D243B4C009B7257 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				CE441CCE1D243B4C009B7257 /* TableViewSettings.h */,
+				CE441CCF1D243B4C009B7257 /* TableViewSettings.m */,
+				CE441CD01D243B4C009B7257 /* TableViewSettingsUniversity.h */,
+				CE441CD11D243B4C009B7257 /* TableViewSettingsUniversity.m */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		CE441CD41D243B5D009B7257 /* Plan */ = {
+			isa = PBXGroup;
+			children = (
+				CE441CD51D243B5D009B7257 /* PlanTableView.h */,
+				CE441CD61D243B5D009B7257 /* PlanTableView.m */,
+				CE441CD71D243B5D009B7257 /* PlanViewCell.h */,
+				CE441CD81D243B5D009B7257 /* PlanViewCell.m */,
+				CE441CD91D243B5D009B7257 /* PlanViewController.h */,
+				CE441CDA1D243B5D009B7257 /* PlanViewController.m */,
+			);
+			path = Plan;
+			sourceTree = "<group>";
+		};
+		CE441CDE1D243B6B009B7257 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE441CDF1D243B6B009B7257 /* Favorites+CoreDataProperties.h */,
+				CE441CE01D243B6B009B7257 /* Favorites+CoreDataProperties.m */,
+				CE441CE11D243B6B009B7257 /* Favorites.h */,
+				CE441CE21D243B6B009B7257 /* Favorites.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CE441CE81D243BB2009B7257 /* Group */ = {
+			isa = PBXGroup;
+			children = (
+				CE441CE91D243BB2009B7257 /* Selection */,
+				CE441D011D243BB2009B7257 /* TableViewControllerFaculties.h */,
+				CE441D021D243BB2009B7257 /* TableViewControllerFaculties.m */,
+				CE441D031D243BB2009B7257 /* TableViewControllerGroup.h */,
+				CE441D041D243BB2009B7257 /* TableViewControllerGroup.m */,
+			);
+			path = Group;
+			sourceTree = "<group>";
+		};
+		CE441CE91D243BB2009B7257 /* Selection */ = {
+			isa = PBXGroup;
+			children = (
+				CE441CEA1D243BB2009B7257 /* Graph */,
+				CE441CEF1D243BB2009B7257 /* Register */,
+				CE441CFA1D243BB2009B7257 /* TableViewControllerSelection.h */,
+				CE441CFB1D243BB2009B7257 /* TableViewControllerSelection.m */,
+				CE441CFC1D243BB2009B7257 /* Time Table */,
+			);
+			path = Selection;
+			sourceTree = "<group>";
+		};
+		CE441CEA1D243BB2009B7257 /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				CE441CEB1D243BB2009B7257 /* TableViewCellGraph.h */,
+				CE441CEC1D243BB2009B7257 /* TableViewCellGraph.m */,
+				CE441CED1D243BB2009B7257 /* TableViewControllerGraph.h */,
+				CE441CEE1D243BB2009B7257 /* TableViewControllerGraph.m */,
+			);
+			path = Graph;
+			sourceTree = "<group>";
+		};
+		CE441CEF1D243BB2009B7257 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				CE441CF01D243BB2009B7257 /* TableViewCellRegister.h */,
+				CE441CF11D243BB2009B7257 /* TableViewCellRegister.m */,
+				CE441CF21D243BB2009B7257 /* TableViewCellSubject.h */,
+				CE441CF31D243BB2009B7257 /* TableViewCellSubject.m */,
+				CE441CF41D243BB2009B7257 /* TableViewControllerInfo.h */,
+				CE441CF51D243BB2009B7257 /* TableViewControllerInfo.m */,
+				CE441CF61D243BB2009B7257 /* TableViewControllerRegister.h */,
+				CE441CF71D243BB2009B7257 /* TableViewControllerRegister.m */,
+				CE441CF81D243BB2009B7257 /* TableViewRegisterContent.h */,
+				CE441CF91D243BB2009B7257 /* TableViewRegisterContent.m */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		CE441CFC1D243BB2009B7257 /* Time Table */ = {
+			isa = PBXGroup;
+			children = (
+				CE441CFD1D243BB2009B7257 /* TableViewCellContent.h */,
+				CE441CFE1D243BB2009B7257 /* TableViewCellContent.m */,
+				CE441CFF1D243BB2009B7257 /* ViewControllerPageContent.h */,
+				CE441D001D243BB2009B7257 /* ViewControllerPageContent.m */,
+			);
+			path = "Time Table";
+			sourceTree = "<group>";
+		};
+		CE441D111D243BC5009B7257 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				CE441D121D243BC5009B7257 /* DataManager.h */,
+				CE441D131D243BC5009B7257 /* DataManager.m */,
+				CE441D141D243BC5009B7257 /* Graph */,
+				CE441D171D243BC5009B7257 /* TableViewControllerSelFav.h */,
+				CE441D181D243BC5009B7257 /* TableViewControllerSelFav.m */,
+				CE441D191D243BC5009B7257 /* TableViewFav.h */,
+				CE441D1A1D243BC5009B7257 /* TableViewFav.m */,
+				CE441D1B1D243BC5009B7257 /* Time Table */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		CE441D141D243BC5009B7257 /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				CE441D151D243BC5009B7257 /* TableViewGraphFav.h */,
+				CE441D161D243BC5009B7257 /* TableViewGraphFav.m */,
+			);
+			path = Graph;
+			sourceTree = "<group>";
+		};
+		CE441D1B1D243BC5009B7257 /* Time Table */ = {
+			isa = PBXGroup;
+			children = (
+				CE441D1C1D243BC5009B7257 /* TableViewPageContFav.h */,
+				CE441D1D1D243BC5009B7257 /* TableViewPageContFav.m */,
+			);
+			path = "Time Table";
+			sourceTree = "<group>";
+		};
+		CE441D261D243BED009B7257 /* Department */ = {
+			isa = PBXGroup;
+			children = (
+				CE441D271D243BED009B7257 /* TableViewCellDept.h */,
+				CE441D281D243BED009B7257 /* TableViewCellDept.m */,
+				CE441D291D243BED009B7257 /* TableViewControllerDept.h */,
+				CE441D2A1D243BED009B7257 /* TableViewControllerDept.m */,
+			);
+			path = Department;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -89,9 +429,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE441C9E1D24395E009B7257 /* Build configuration list for PBXNativeTarget "MMIS" */;
 			buildPhases = (
+				F8CA2F8D8985C812FF59D667 /* [CP] Check Pods Manifest.lock */,
 				CE441C801D24395D009B7257 /* Sources */,
 				CE441C811D24395D009B7257 /* Frameworks */,
 				CE441C821D24395D009B7257 /* Resources */,
+				7D35BC75E686E636681AB357 /* [CP] Embed Pods Frameworks */,
+				67E8B22263D509FF23DC8355 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -148,15 +491,99 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		67E8B22263D509FF23DC8355 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MMIS/Pods-MMIS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D35BC75E686E636681AB357 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MMIS/Pods-MMIS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8CA2F8D8985C812FF59D667 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CE441C801D24395D009B7257 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE441D0A1D243BB2009B7257 /* TableViewControllerRegister.m in Sources */,
+				CE441D071D243BB2009B7257 /* TableViewCellRegister.m in Sources */,
+				CE441CC71D243B11009B7257 /* TableViewDepartment.m in Sources */,
+				CE441CD21D243B4C009B7257 /* TableViewSettings.m in Sources */,
+				CE441D091D243BB2009B7257 /* TableViewControllerInfo.m in Sources */,
+				CE441D211D243BC5009B7257 /* TableViewFav.m in Sources */,
+				CE441D051D243BB2009B7257 /* TableViewCellGraph.m in Sources */,
+				CE441D0C1D243BB2009B7257 /* TableViewControllerSelection.m in Sources */,
+				CE441D2B1D243BED009B7257 /* TableViewCellDept.m in Sources */,
 				CE441C8F1D24395D009B7257 /* ViewController.m in Sources */,
 				CE441C8C1D24395D009B7257 /* AppDelegate.m in Sources */,
+				CE441CC61D243B11009B7257 /* TableViewControllerClamping.m in Sources */,
+				CE441CE71D243B94009B7257 /* InfoController.m in Sources */,
+				CE441CDB1D243B5D009B7257 /* PlanTableView.m in Sources */,
+				CE441CC81D243B11009B7257 /* TabBarTeacher.m in Sources */,
+				CE441D221D243BC5009B7257 /* TableViewPageContFav.m in Sources */,
+				CE441D341D24432C009B7257 /* DGTU.xcdatamodeld in Sources */,
+				CE441D0E1D243BB2009B7257 /* ViewControllerPageContent.m in Sources */,
+				CE441CDC1D243B5D009B7257 /* PlanViewCell.m in Sources */,
+				CE441D0D1D243BB2009B7257 /* TableViewCellContent.m in Sources */,
+				CE441D1E1D243BC5009B7257 /* DataManager.m in Sources */,
+				CE441D0B1D243BB2009B7257 /* TableViewRegisterContent.m in Sources */,
+				CE441D361D2446ED009B7257 /* TableViewHelp.m in Sources */,
+				CE441D101D243BB2009B7257 /* TableViewControllerGroup.m in Sources */,
+				CE441D2C1D243BED009B7257 /* TableViewControllerDept.m in Sources */,
+				CE441D1F1D243BC5009B7257 /* TableViewGraphFav.m in Sources */,
 				CE441C891D24395D009B7257 /* main.m in Sources */,
-				CE441C951D24395E009B7257 /* MMIS.xcdatamodeld in Sources */,
+				CE441CB21D243AFF009B7257 /* LeftMenuViewController.m in Sources */,
+				CE441CCC1D243B11009B7257 /* ViewControllerPageTeacher.m in Sources */,
+				CE441D201D243BC5009B7257 /* TableViewControllerSelFav.m in Sources */,
+				CE441CCA1D243B11009B7257 /* TableViewTeacher.m in Sources */,
+				CE441CB31D243AFF009B7257 /* TableViewCellMenu.m in Sources */,
+				CE441CCB1D243B11009B7257 /* TableViewPageContTeacher.m in Sources */,
+				CE441CD31D243B4C009B7257 /* TableViewSettingsUniversity.m in Sources */,
+				CE441D081D243BB2009B7257 /* TableViewCellSubject.m in Sources */,
+				CE441D0F1D243BB2009B7257 /* TableViewControllerFaculties.m in Sources */,
+				CE441CDD1D243B5D009B7257 /* PlanViewController.m in Sources */,
+				CE441CE41D243B6B009B7257 /* Favorites.m in Sources */,
+				CE441D061D243BB2009B7257 /* TableViewControllerGraph.m in Sources */,
+				CE441CE31D243B6B009B7257 /* Favorites+CoreDataProperties.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,7 +646,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -258,7 +685,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -268,8 +695,10 @@
 		};
 		CE441C9F1D24395E009B7257 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EEBD2F8EBE3C16626A6ADAB /* Pods-MMIS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = MMIS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Pavlov.MMIS;
@@ -279,8 +708,10 @@
 		};
 		CE441CA01D24395E009B7257 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BC8EBFA2FD324AFD6F93CCC /* Pods-MMIS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = MMIS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Pavlov.MMIS;
@@ -307,17 +738,18 @@
 				CE441CA01D24395E009B7257 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		CE441C931D24395E009B7257 /* MMIS.xcdatamodeld */ = {
+		CE441D321D24432C009B7257 /* DGTU.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				CE441C941D24395E009B7257 /* MMIS.xcdatamodel */,
+				CE441D331D24432C009B7257 /* DGTU.xcdatamodel */,
 			);
-			currentVersion = CE441C941D24395E009B7257 /* MMIS.xcdatamodel */;
-			path = MMIS.xcdatamodeld;
+			currentVersion = CE441D331D24432C009B7257 /* DGTU.xcdatamodel */;
+			path = DGTU.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

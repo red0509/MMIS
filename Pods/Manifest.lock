@@ -1,0 +1,18 @@
+PODS:
+  - HTMLReader (0.9.6)
+  - iOS-Slide-Menu (1.5)
+  - SVProgressHUD (2.0.3)
+
+DEPENDENCIES:
+  - HTMLReader (~> 0.9)
+  - iOS-Slide-Menu (~> 1.5)
+  - SVProgressHUD (~> 2.0)
+
+SPEC CHECKSUMS:
+  HTMLReader: 7e21488ee378afc56ccade8af35840c4e03e434c
+  iOS-Slide-Menu: 40b0cbd8916c42afc755f0869793cd09e7a32102
+  SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
+
+PODFILE CHECKSUM: 41fa513e1ae758c8d2b6847d3efa5443221cdda5
+
+COCOAPODS: 1.0.1

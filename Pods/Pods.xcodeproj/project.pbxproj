@@ -1,0 +1,985 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B4FA9F7E7DD2216ADC93E17AD17062B /* HTMLNamespace.h in Headers */ = {isa = PBXBuildFile; fileRef = DC0E4C6EE8F9FBE49A1437CB66F4B217 /* HTMLNamespace.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0D1DC4D903C012CE57E026EEA7EC3BB8 /* HTMLComment.h in Headers */ = {isa = PBXBuildFile; fileRef = BFCB633B7EF80B11FB4EC8CA6EAA3045 /* HTMLComment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0DF160931101F5B78074255316F6045D /* HTMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 252D7B003DD40E1C5B608E0B9A5A5FC4 /* HTMLDocument.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		0E2149D8B067DAADF1DF26B2C7466719 /* SlideNavigationContorllerAnimatorSlideAndFade.m in Sources */ = {isa = PBXBuildFile; fileRef = 96418860BD9CFFDC772158DCD15EC68B /* SlideNavigationContorllerAnimatorSlideAndFade.m */; };
+		0E97CF6069C3A68F7F3221670274B579 /* SlideNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11EDDD80BF3915B215614AC70858E223 /* SlideNavigationController.m */; };
+		10DDC174E113914E3218E2B4B259F790 /* SlideNavigationContorllerAnimatorSlide.m in Sources */ = {isa = PBXBuildFile; fileRef = 4249A4D0AE9FE5B618CA6C31E445C5A0 /* SlideNavigationContorllerAnimatorSlide.m */; };
+		11CB21CE1DCC14FC242C2A053D92B01F /* HTMLReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 415B85B8101A5AEC9E20A90A1F52BCCF /* HTMLReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		133531AFBBE1710AAE309E65B8DCDA5D /* HTMLPreprocessedInputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 752BA4FE744E6122EA55ED6F18F6593E /* HTMLPreprocessedInputStream.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17E556C45C78CB8F421EB144D526019A /* HTMLOrderedDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 429F54779B5B0A14C1052441A67291CB /* HTMLOrderedDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199C7EE74D790DA7EC2D318ABDD07A40 /* SVIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D58A8BA79C9269CD68B3FBB4BA9F415 /* SVIndefiniteAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1CD39E52A50ED2DA0B0D625B3E257F98 /* SlideNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CB0FF46F59C16555E3BAF657389963B /* SlideNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1CEE9A7D3CAA2AE2DE1B9EAFE5A8D65D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A817CAE99C81EE68006DC1E60E295C0A /* Foundation.framework */; };
+		215C13DE480A18BD8EEC47875C4D6D49 /* HTMLSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A373A7EB6E3023BC4C95E18D6457B28 /* HTMLSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		21F6C9A776323FCB7371567808AB2947 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091D54A73E1E8BB182C9D7D245AF1C2F /* UIKit.framework */; };
+		223CE075A561DADB84D4B198313DB085 /* SlideNavigationContorllerAnimatorScaleAndFade.h in Headers */ = {isa = PBXBuildFile; fileRef = 11E99530A2990F22C3B170FB4B70EA51 /* SlideNavigationContorllerAnimatorScaleAndFade.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		22C96CC13986EF60B5805B11B41A41D6 /* HTMLTreeEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = A35A0E9ED0B1DDC0E49C76C69BBC2FA8 /* HTMLTreeEnumerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		22DC43F1A23AF57149E1D204FEBDA843 /* HTMLSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 99FBD33EA392840EC488E036EE31900F /* HTMLSerialization.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		278F621A27C8FBDE1483D9E585B6C0AD /* SlideNavigationContorllerAnimatorScale.h in Headers */ = {isa = PBXBuildFile; fileRef = F64E57EC1FDF36AE5E76BDC9D405242C /* SlideNavigationContorllerAnimatorScale.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		281DBC0D58A1E74AC826F552D495887A /* HTMLDocumentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B0B061A57AAB22BCEAB099B3CBF4C67 /* HTMLDocumentType.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		287E63E6D5C966BF31011686EDE8BEEE /* SlideNavigationContorllerAnimatorFade.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E04AA6C694B7D2FB5661D7763DD3C1D /* SlideNavigationContorllerAnimatorFade.m */; };
+		2AEE0AF056A83BEF4E3209EFFD8F4CC9 /* HTMLEntities.h in Headers */ = {isa = PBXBuildFile; fileRef = 56602E3D0DF8FA9A5BDC24CB1ED37E43 /* HTMLEntities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		32AE2F78AA9B4FBA4610E47B80EC4388 /* HTMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 0358456E57FD048964423D121739F580 /* HTMLNode.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		3ED6F5B5DC137AF1D4B3F7875C35780E /* SlideNavigationContorllerAnimatorSlideAndFade.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C5DBBEEE56AD0F7240BF800399DAD7C /* SlideNavigationContorllerAnimatorSlideAndFade.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		49F0EB2ADD58B28F70BA8B2A4C03B457 /* HTMLTextNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 3967AEE2DF9F62BF388B0AEF4825E0F6 /* HTMLTextNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		51B2DEEDC259F15971E0E44F42FCBF2B /* HTMLDocumentType.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F45345286D02675BE4F5C0AD66155B6 /* HTMLDocumentType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B28A4A3728556BC38030D44698B5C41 /* SlideNavigationContorllerAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = B9107A1A40105023A386AFF41269537D /* SlideNavigationContorllerAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D9B814EBA4FFDF5B9110AFB6BEE70AA /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FAED1341909CA55F48361FB8953E660 /* SVProgressAnimatedView.m */; };
+		65EF89283B88F58CAC348F6B6EE6E851 /* iOS-Slide-Menu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 428A58CDDB4B8C53CAED76A7B422BA3A /* iOS-Slide-Menu-dummy.m */; };
+		669ED72A5B44902AC667821FF52391CE /* HTMLTokenizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F0258AAAED0721F4FFB55131A7113B7 /* HTMLTokenizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		66BF2BAE7344FD10EA354C06158E708F /* HTMLSelector.h in Headers */ = {isa = PBXBuildFile; fileRef = E95F00A55EAE9D5ED2457EA59C1017D8 /* HTMLSelector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6752CD10A6A89EFCFBF1174688A0F3F2 /* HTMLEncoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EAAB9555E1D5403055490F5A30D6E1B /* HTMLEncoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		71328339BDA7B2A4758DE0748194CE6E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A817CAE99C81EE68006DC1E60E295C0A /* Foundation.framework */; };
+		73AA2E4357B6149E15E9F9972839A360 /* SlideNavigationContorllerAnimatorScaleAndFade.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A7A3BAE0FDF2BDB5EA84798182759DB /* SlideNavigationContorllerAnimatorScaleAndFade.m */; };
+		79AD2D5F251C14908F273359E8B46AAF /* HTMLPreprocessedInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = F073A2E32E6CE088D23B8669593838C6 /* HTMLPreprocessedInputStream.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		7A07330EE381A6E441E5B101477DF182 /* HTMLParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 987AE4C60C0791CC9A69610FA3DD5683 /* HTMLParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C808486DEEA3C0DAD42C012A1A4DA04 /* SVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 755F8BD4F2D468EB35932B7FAACD34E0 /* SVProgressHUD-dummy.m */; };
+		824F40BDC07D1CAF5A98F52C8DAD6A51 /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = E314A66DF7E1ACCC12AAB345D27F1509 /* SVProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83268FC838AE77C31EF8CC0D403A1F9E /* SlideNavigationContorllerAnimatorFade.h in Headers */ = {isa = PBXBuildFile; fileRef = 02E9BB7CD2808E8BB499D7926E41FD90 /* SlideNavigationContorllerAnimatorFade.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83FE41A88ACB88A2AA58F3173C7815A8 /* HTMLDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B448F509B55FA88C8D46505ABBD23E2 /* HTMLDocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		890C0AFCFC9FB6414EFAD635C9CCF808 /* HTMLReader-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5643A457E67CDADC01FBF941AA4D0DD4 /* HTMLReader-dummy.m */; };
+		9310E8C6163C37AEC9B8772826BC2E53 /* HTMLSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 3467F0B91CAC943B8F1DA516027F91E7 /* HTMLSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		953870BDC3D0A09A739FDCF49FBDFD8C /* HTMLTreeEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFACEA2FC5B6B0992B8A2FD57E282E0 /* HTMLTreeEnumerator.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9A049B26B146AD30D963E877D58C436D /* NSString+HTMLEntities.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B18B6BE8F9695370545F17195709633 /* NSString+HTMLEntities.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9B6E7997A0F28232180CB057C8C5665D /* HTMLString.m in Sources */ = {isa = PBXBuildFile; fileRef = C6651DB7B310DC2995852B55F11384A3 /* HTMLString.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9DAFA08BA7BE404EFFB2CCD396C22D23 /* HTMLEntities.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F5593698E586AC6D6BD09560B7501C /* HTMLEntities.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		A38A5771356CC9885D0204A71CDCB048 /* SlideNavigationContorllerAnimatorSlide.h in Headers */ = {isa = PBXBuildFile; fileRef = F2E66A5351F9FA2A35BF830DB287C63A /* SlideNavigationContorllerAnimatorSlide.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A8C3C1E94F7820D528A29C9D05C8B1F0 /* HTMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = A671C1CC177753401231BD1FE8BA9F17 /* HTMLElement.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		AA04BC479C59828DE29438C6B99954EA /* HTMLQuirksMode.h in Headers */ = {isa = PBXBuildFile; fileRef = 62943FAE865950F19F336958470055C9 /* HTMLQuirksMode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA44DD6E1666621C82FA497781194739 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A817CAE99C81EE68006DC1E60E295C0A /* Foundation.framework */; };
+		B6C01596DA2891EC28B891DE4F74155A /* HTMLElement.h in Headers */ = {isa = PBXBuildFile; fileRef = D61119004C774930D638F933DD1C8012 /* HTMLElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C2188017524F3330422B6E22763533F8 /* HTMLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE1482C4DBA237F3FC8F06787961D1A /* HTMLEncoding.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C21CADF8E124CD8B96D6DBFEA0D4AADB /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA8CFF643FA1D28CB070237154AF169 /* SVIndefiniteAnimatedView.m */; };
+		C3D64874C3848E5BAEC313841037BA48 /* Pods-MMIS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C90ED79AD287887149767E7CB36D9C3C /* Pods-MMIS-dummy.m */; };
+		C4699EB7D17A2E13610E666EA772AF4E /* SVProgressAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = B7D11B97B5560C89FAC9902AC89E864C /* SVProgressAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CAE34261735FDC0ACD9C2AB0E8FEEE77 /* HTMLNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 46F1B17349417A7F175A2E7824EFBA6A /* HTMLNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB2D55757323696318156F6A1DF1C1A5 /* HTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 354E921E9149944B7A2963AB17D2E10C /* HTMLParser.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		CB33515D9DC56B4D74449AC204FE5F8C /* HTMLTextNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 68AD8A8088DF91B27C61989DF210EE59 /* HTMLTextNode.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		D080E3E03172FC2309B52EE7973DE043 /* HTMLTokenizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C7B348D04A94B2A0C820DEA8E18C45 /* HTMLTokenizer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		DC6AEC282650829AE6820DEB7BD56EF4 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E2F58E4B0124542EE6DF2D89A63FC50 /* SVProgressHUD.m */; };
+		E1E56868CF38B1D6EE631C33871B647F /* NSString+HTMLEntities.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BC55CFCC0CDEEE9C754D2A285714DFA /* NSString+HTMLEntities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E3653D706A29780C8D6108ACDCBD9A32 /* HTMLString.h in Headers */ = {isa = PBXBuildFile; fileRef = 4543E4FE00304BA43EBB8499CDA69926 /* HTMLString.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E524B50639F4EE77F800A74B46CDD842 /* SlideNavigationContorllerAnimatorScale.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A12A7F65D77D4815562F730E793288 /* SlideNavigationContorllerAnimatorScale.m */; };
+		E8040DAA7EF88053A734B3D9DEAE9FC4 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CAB9BC3058D3ED9D8DDB1C91969AE1D /* SVRadialGradientLayer.m */; };
+		EA7EA24FE0F8772F8E32B241BA337099 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23016F69B2480F44D0BB5526B39192FA /* QuartzCore.framework */; };
+		EAC48C3426C57791CDCE5BC684FA719B /* SVRadialGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F8ACF5A8D69BA0311592758DF3A7FCC /* SVRadialGradientLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED619751D9A5A0E7299C65F4810A475E /* HTMLSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C4A453409BC5621D36B6CE46A9C7079 /* HTMLSelector.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		EF7EBA710CED35452A6EAFF98FEF4D6C /* HTMLTokenizerState.h in Headers */ = {isa = PBXBuildFile; fileRef = A3709997570AD8BFB08ECF9EFB5F325A /* HTMLTokenizerState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F30A311597639922EEB9454DBEF3489C /* HTMLComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F030FE0098F391DE40EC45B0EF30864 /* HTMLComment.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		FE209434C714305408122E12D01BD4F6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A817CAE99C81EE68006DC1E60E295C0A /* Foundation.framework */; };
+		FF0170BA5CA7E257EEB73847E37296D6 /* HTMLOrderedDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 80AFA6699C1C84F4CCF2FDADCE5007DF /* HTMLOrderedDictionary.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1F2ACB5810E85A28FDA576ACABA302BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01C8647DD33AEB6D8706D1A9DB17FA18;
+			remoteInfo = "iOS-Slide-Menu";
+		};
+		2FF933C49C317C95C6B262D1F02EC30A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7ACA8E0724B5085A47CF1AA8EFE72478;
+			remoteInfo = SVProgressHUD;
+		};
+		E5E26D15721BA687194308C6ADE34E45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8EE6E444E93E358D850374D4AEAE64A;
+			remoteInfo = HTMLReader;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02E9BB7CD2808E8BB499D7926E41FD90 /* SlideNavigationContorllerAnimatorFade.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SlideNavigationContorllerAnimatorFade.h; path = SlideMenu/Source/Animations/SlideNavigationContorllerAnimatorFade.h; sourceTree = "<group>"; };
+		0358456E57FD048964423D121739F580 /* HTMLNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTMLNode.m; path = Code/HTMLNode.m; sourceTree = "<group>"; };
+		066988CCAB544D4692A1FB35E22819E1 /* libSVProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSVProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		091D54A73E1E8BB182C9D7D245AF1C2F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		0BC55CFCC0CDEEE9C754D2A285714DFA /* NSString+HTMLEntities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+HTMLEntities.h"; path = "Code/NSString+HTMLEntities.h"; sourceTree = "<group>"; };
+		0FAED1341909CA55F48361FB8953E660 /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressAnimatedView.m; path = SVProgressHUD/SVProgressAnimatedView.m; sourceTree = "<group>"; };
+		11E99530A2990F22C3B170FB4B70EA51 /* SlideNavigationContorllerAnimatorScaleAndFade.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SlideNavigationContorllerAnimatorScaleAndFade.h; path = SlideMenu/Source/Animations/SlideNavigationContorllerAnimatorScaleAndFade.h; sourceTree = "<group>"; };
+		11EDDD80BF3915B215614AC70858E223 /* SlideNavigationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SlideNavigationController.m; path = SlideMenu/Source/SlideNavigationController.m; sourceTree = "<group>"; };
+		1AA8CFF643FA1D28CB070237154AF169 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVIndefiniteAnimatedView.m; path = SVProgressHUD/SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		1B18B6BE8F9695370545F17195709633 /* NSString+HTMLEntities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+HTMLEntities.m"; path = "Code/NSString+HTMLEntities.m"; sourceTree = "<group>"; };
+		1CAB9BC3058D3ED9D8DDB1C91969AE1D /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVRadialGradientLayer.m; path = SVProgressHUD/SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		21F78CABEE3428ABE92454744D3FBC1A /* Pods-MMIS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MMIS.release.xcconfig"; sourceTree = "<group>"; };
+		22ACCFA539EA23AD6300DB5F87CAF90A /* Pods-MMIS-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MMIS-resources.sh"; sourceTree = "<group>"; };
+		23016F69B2480F44D0BB5526B39192FA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		2402126DA0B4FFCF4D56DF10BBE47574 /* Pods-MMIS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MMIS.debug.xcconfig"; sourceTree = "<group>"; };
+		252D7B003DD40E1C5B608E0B9A5A5FC4 /* HTMLDocument.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTMLDocument.m; path = Code/HTMLDocument.m; sourceTree = "<group>"; };
+		2B0B061A57AAB22BCEAB099B3CBF4C67 /* HTMLDocumentType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTMLDocumentType.m; path = Code/HTMLDocumentType.m; sourceTree = "<group>"; };
+		2B448F509B55FA88C8D46505ABBD23E2 /* HTMLDocument.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTMLDocument.h; path = Code/HTMLDocument.h; sourceTree = "<group>"; };
+		2C38764E2B7CB89BA6AC984C9C0498F3 /* menu-button@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "menu-button@2x.png"; path = "SlideMenu/Source/Assets/menu-button@2x.png"; sourceTree = "<group>"; };
+		2C5DBBEEE56AD0F7240BF800399DAD7C /* SlideNavigationContorllerAnimatorSlideAndFade.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SlideNavigationContorllerAnimatorSlideAndFade.h; path = SlideMenu/Source/Animations/SlideNavigationContorllerAnimatorSlideAndFade.h; sourceTree = "<group>"; };
+		3467F0B91CAC943B8F1DA516027F91E7 /* HTMLSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTMLSupport.h; path = Code/HTMLSupport.h; sourceTree = "<group>"; };
+		354E921E9149944B7A2963AB17D2E10C /* HTMLParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTMLParser.m; path = Code/HTMLParser.m; sourceTree = "<group>"; };
+		3967AEE2DF9F62BF388B0AEF4825E0F6 /* HTMLTextNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTMLTextNode.h; path = Code/HTMLTextNode.h; sourceTree = "<group>"; };
+		3A373A7EB6E3023BC4C95E18D6457B28 /* HTMLSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTMLSerialization.h; path = Code/HTMLSerialization.h; sourceTree = "<group>"; };
+		3CB0FF46F59C16555E3BAF657389963B /* SlideNavigationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SlideNavigationController.h; path = SlideMenu/Source/SlideNavigationController.h; sourceTree = "<group>"; };
+		415B85B8101A5AEC9E20A90A1F52BCCF /* HTMLReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTMLReader.h; path = Code/HTMLReader.h; sourceTree = "<group>"; };
+		4249A4D0AE9FE5B618CA6C31E445C5A0 /* SlideNavigationContorllerAnimatorSlide.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SlideNavigationContorllerAnimatorSlide.m; path = SlideMenu/Source/Animations/SlideNavigationContorllerAnimatorSlide.m; sourceTree = "<group>"; };
+		428A58CDDB4B8C53CAED76A7B422BA3A /* iOS-Slide-Menu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "iOS-Slide-Menu-dummy.m"; sourceTree = "<group>"; };
+		429F54779B5B0A14C1052441A67291CB /* HTMLOrderedDictionary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTMLOrderedDictionary.h; path = Code/HTMLOrderedDictionary.h; sourceTree = "<group>"; };
+		4543E4FE00304BA43EBB8499CDA69926 /* HTMLString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTMLString.h; path = Code/HTMLString.h; sourceTree = "<group>"; };
+		46F1B17349417A7F175A2E7824EFBA6A /* HTMLNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTMLNode.h; path = Code/HTMLNode.h; sourceTree = "<group>"; };
+		54C7B348D04A94B2A0C820DEA8E18C45 /* HTMLTokenizer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTMLTokenizer.m; path = Code/HTMLTokenizer.m; sourceTree = "<group>"; };
+		55A12A7F65D77D4815562F730E793288 /* SlideNavigationContorllerAnimatorScale.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SlideNavigationContorllerAnimatorScale.m; path = SlideMenu/Source/Animations/SlideNavigationContorllerAnimatorScale.m; sourceTree = "<group>"; };
+		5643A457E67CDADC01FBF941AA4D0DD4 /* HTMLReader-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HTMLReader-dummy.m"; sourceTree = "<group>"; };
+		56602E3D0DF8FA9A5BDC24CB1ED37E43 /* HTMLEntities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTMLEntities.h; path = Code/HTMLEntities.h; sourceTree = "<group>"; };
+		5B46F83FAA9FFABDA917BA7424B7C403 /* SVProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.xcconfig; sourceTree = "<group>"; };
+		5F8351FB1F5A629AB4EB2CBAB6F6207D /* libiOS-Slide-Menu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libiOS-Slide-Menu.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		62943FAE865950F19F336958470055C9 /* HTMLQuirksMode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTMLQuirksMode.h; path = Code/HTMLQuirksMode.h; sourceTree = "<group>"; };
+		646EB1B6805D4D8A6B930D91EE9BFCAE /* HTMLReader-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HTMLReader-prefix.pch"; sourceTree = "<group>"; };
+		67EA9925407FFE2A5EB196131742B689 /* HTMLReader.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HTMLReader.xcconfig; sourceTree = "<group>"; };
+		68AD8A8088DF91B27C61989DF210EE59 /* HTMLTextNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTMLTextNode.m; path = Code/HTMLTextNode.m; sourceTree = "<group>"; };
+		6EAAB9555E1D5403055490F5A30D6E1B /* HTMLEncoding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTMLEncoding.h; path = Code/HTMLEncoding.h; sourceTree = "<group>"; };
+		752BA4FE744E6122EA55ED6F18F6593E /* HTMLPreprocessedInputStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTMLPreprocessedInputStream.h; path = Code/HTMLPreprocessedInputStream.h; sourceTree = "<group>"; };
+		755F8BD4F2D468EB35932B7FAACD34E0 /* SVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		7BE1482C4DBA237F3FC8F06787961D1A /* HTMLEncoding.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTMLEncoding.m; path = Code/HTMLEncoding.m; sourceTree = "<group>"; };
+		7C4A453409BC5621D36B6CE46A9C7079 /* HTMLSelector.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTMLSelector.m; path = Code/HTMLSelector.m; sourceTree = "<group>"; };
+		7D58A8BA79C9269CD68B3FBB4BA9F415 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVIndefiniteAnimatedView.h; path = SVProgressHUD/SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		7E04AA6C694B7D2FB5661D7763DD3C1D /* SlideNavigationContorllerAnimatorFade.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SlideNavigationContorllerAnimatorFade.m; path = SlideMenu/Source/Animations/SlideNavigationContorllerAnimatorFade.m; sourceTree = "<group>"; };
+		7E2F58E4B0124542EE6DF2D89A63FC50 /* SVProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
+		7F0258AAAED0721F4FFB55131A7113B7 /* HTMLTokenizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTMLTokenizer.h; path = Code/HTMLTokenizer.h; sourceTree = "<group>"; };
+		80AFA6699C1C84F4CCF2FDADCE5007DF /* HTMLOrderedDictionary.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTMLOrderedDictionary.m; path = Code/HTMLOrderedDictionary.m; sourceTree = "<group>"; };
+		84A9061E6964E3AA9217640F14F1202A /* libPods-MMIS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MMIS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8576FCCD0B27C21391D611030B708779 /* menu-button.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "menu-button.png"; path = "SlideMenu/Source/Assets/menu-button.png"; sourceTree = "<group>"; };
+		8F45345286D02675BE4F5C0AD66155B6 /* HTMLDocumentType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTMLDocumentType.h; path = Code/HTMLDocumentType.h; sourceTree = "<group>"; };
+		8F8ACF5A8D69BA0311592758DF3A7FCC /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVRadialGradientLayer.h; path = SVProgressHUD/SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		96418860BD9CFFDC772158DCD15EC68B /* SlideNavigationContorllerAnimatorSlideAndFade.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SlideNavigationContorllerAnimatorSlideAndFade.m; path = SlideMenu/Source/Animations/SlideNavigationContorllerAnimatorSlideAndFade.m; sourceTree = "<group>"; };
+		987AE4C60C0791CC9A69610FA3DD5683 /* HTMLParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTMLParser.h; path = Code/HTMLParser.h; sourceTree = "<group>"; };
+		99FBD33EA392840EC488E036EE31900F /* HTMLSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTMLSerialization.m; path = Code/HTMLSerialization.m; sourceTree = "<group>"; };
+		9A7A3BAE0FDF2BDB5EA84798182759DB /* SlideNavigationContorllerAnimatorScaleAndFade.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SlideNavigationContorllerAnimatorScaleAndFade.m; path = SlideMenu/Source/Animations/SlideNavigationContorllerAnimatorScaleAndFade.m; sourceTree = "<group>"; };
+		9F030FE0098F391DE40EC45B0EF30864 /* HTMLComment.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTMLComment.m; path = Code/HTMLComment.m; sourceTree = "<group>"; };
+		A35A0E9ED0B1DDC0E49C76C69BBC2FA8 /* HTMLTreeEnumerator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTMLTreeEnumerator.h; path = Code/HTMLTreeEnumerator.h; sourceTree = "<group>"; };
+		A3709997570AD8BFB08ECF9EFB5F325A /* HTMLTokenizerState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTMLTokenizerState.h; path = Code/HTMLTokenizerState.h; sourceTree = "<group>"; };
+		A671C1CC177753401231BD1FE8BA9F17 /* HTMLElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTMLElement.m; path = Code/HTMLElement.m; sourceTree = "<group>"; };
+		A817CAE99C81EE68006DC1E60E295C0A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		AA3CAE5270FD7856D0E20A3EE074AD8A /* libHTMLReader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libHTMLReader.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7D11B97B5560C89FAC9902AC89E864C /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressAnimatedView.h; path = SVProgressHUD/SVProgressAnimatedView.h; sourceTree = "<group>"; };
+		B9107A1A40105023A386AFF41269537D /* SlideNavigationContorllerAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SlideNavigationContorllerAnimator.h; path = SlideMenu/Source/Animations/SlideNavigationContorllerAnimator.h; sourceTree = "<group>"; };
+		BFCB633B7EF80B11FB4EC8CA6EAA3045 /* HTMLComment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTMLComment.h; path = Code/HTMLComment.h; sourceTree = "<group>"; };
+		C4B3E548F214E3E4A5FD7530202E759C /* SVProgressHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
+		C6651DB7B310DC2995852B55F11384A3 /* HTMLString.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTMLString.m; path = Code/HTMLString.m; sourceTree = "<group>"; };
+		C90ED79AD287887149767E7CB36D9C3C /* Pods-MMIS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MMIS-dummy.m"; sourceTree = "<group>"; };
+		CC4FD17916D6C4E59F76993AB191BC8E /* iOS-Slide-Menu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iOS-Slide-Menu-prefix.pch"; sourceTree = "<group>"; };
+		D607DA9DB00718753F68A99ACF5D1BEE /* Pods-MMIS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MMIS-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D61119004C774930D638F933DD1C8012 /* HTMLElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTMLElement.h; path = Code/HTMLElement.h; sourceTree = "<group>"; };
+		DC0E4C6EE8F9FBE49A1437CB66F4B217 /* HTMLNamespace.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTMLNamespace.h; path = Code/HTMLNamespace.h; sourceTree = "<group>"; };
+		DCFACEA2FC5B6B0992B8A2FD57E282E0 /* HTMLTreeEnumerator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTMLTreeEnumerator.m; path = Code/HTMLTreeEnumerator.m; sourceTree = "<group>"; };
+		DE9A973700CB1270B2D8B7BBEE8526D2 /* Pods-MMIS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MMIS-acknowledgements.plist"; sourceTree = "<group>"; };
+		E314A66DF7E1ACCC12AAB345D27F1509 /* SVProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
+		E95F00A55EAE9D5ED2457EA59C1017D8 /* HTMLSelector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTMLSelector.h; path = Code/HTMLSelector.h; sourceTree = "<group>"; };
+		F073A2E32E6CE088D23B8669593838C6 /* HTMLPreprocessedInputStream.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTMLPreprocessedInputStream.m; path = Code/HTMLPreprocessedInputStream.m; sourceTree = "<group>"; };
+		F29EE5DEFA174A81A834179A5C501887 /* SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		F2E66A5351F9FA2A35BF830DB287C63A /* SlideNavigationContorllerAnimatorSlide.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SlideNavigationContorllerAnimatorSlide.h; path = SlideMenu/Source/Animations/SlideNavigationContorllerAnimatorSlide.h; sourceTree = "<group>"; };
+		F4F5593698E586AC6D6BD09560B7501C /* HTMLEntities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTMLEntities.m; path = Code/HTMLEntities.m; sourceTree = "<group>"; };
+		F64E57EC1FDF36AE5E76BDC9D405242C /* SlideNavigationContorllerAnimatorScale.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SlideNavigationContorllerAnimatorScale.h; path = SlideMenu/Source/Animations/SlideNavigationContorllerAnimatorScale.h; sourceTree = "<group>"; };
+		F9C58E9F350F7844B75546918A8EAD50 /* Pods-MMIS-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MMIS-frameworks.sh"; sourceTree = "<group>"; };
+		FCFB88FCCC28EC53305017ADE57210FA /* iOS-Slide-Menu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "iOS-Slide-Menu.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		63B153819BA94BA1A0CF2AF077D5120C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA44DD6E1666621C82FA497781194739 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63F8A7E4F33E969C0FD4E12887A9B2F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE209434C714305408122E12D01BD4F6 /* Foundation.framework in Frameworks */,
+				21F6C9A776323FCB7371567808AB2947 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		804ABB0309706E9DE75DD7B187D9E279 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71328339BDA7B2A4758DE0748194CE6E /* Foundation.framework in Frameworks */,
+				EA7EA24FE0F8772F8E32B241BA337099 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D432A40DD6A9FB721195335C9A83B74B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CEE9A7D3CAA2AE2DE1B9EAFE5A8D65D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0803F0613843C710AAE176F9302B7679 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				183D7D8AF10BAF7DEAD0623F9991A77E /* Pods-MMIS */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		0FE8C328FFD1650095456AC71E571A78 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				67EA9925407FFE2A5EB196131742B689 /* HTMLReader.xcconfig */,
+				5643A457E67CDADC01FBF941AA4D0DD4 /* HTMLReader-dummy.m */,
+				646EB1B6805D4D8A6B930D91EE9BFCAE /* HTMLReader-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/HTMLReader";
+			sourceTree = "<group>";
+		};
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DFDE779C6E5D3445E0CB8CCB8D424449 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		183D7D8AF10BAF7DEAD0623F9991A77E /* Pods-MMIS */ = {
+			isa = PBXGroup;
+			children = (
+				D607DA9DB00718753F68A99ACF5D1BEE /* Pods-MMIS-acknowledgements.markdown */,
+				DE9A973700CB1270B2D8B7BBEE8526D2 /* Pods-MMIS-acknowledgements.plist */,
+				C90ED79AD287887149767E7CB36D9C3C /* Pods-MMIS-dummy.m */,
+				F9C58E9F350F7844B75546918A8EAD50 /* Pods-MMIS-frameworks.sh */,
+				22ACCFA539EA23AD6300DB5F87CAF90A /* Pods-MMIS-resources.sh */,
+				2402126DA0B4FFCF4D56DF10BBE47574 /* Pods-MMIS.debug.xcconfig */,
+				21F78CABEE3428ABE92454744D3FBC1A /* Pods-MMIS.release.xcconfig */,
+			);
+			name = "Pods-MMIS";
+			path = "Target Support Files/Pods-MMIS";
+			sourceTree = "<group>";
+		};
+		42B70C0416154CBB7C10C498BD5C9247 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B9FCF4F9D984A32652EBC729D8C616BB /* HTMLReader */,
+				5A42A9749DE876D1C353A782F39744F6 /* iOS-Slide-Menu */,
+				C8EC8D6730B70536D30B590391285551 /* SVProgressHUD */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5A42A9749DE876D1C353A782F39744F6 /* iOS-Slide-Menu */ = {
+			isa = PBXGroup;
+			children = (
+				B9107A1A40105023A386AFF41269537D /* SlideNavigationContorllerAnimator.h */,
+				02E9BB7CD2808E8BB499D7926E41FD90 /* SlideNavigationContorllerAnimatorFade.h */,
+				7E04AA6C694B7D2FB5661D7763DD3C1D /* SlideNavigationContorllerAnimatorFade.m */,
+				F64E57EC1FDF36AE5E76BDC9D405242C /* SlideNavigationContorllerAnimatorScale.h */,
+				55A12A7F65D77D4815562F730E793288 /* SlideNavigationContorllerAnimatorScale.m */,
+				11E99530A2990F22C3B170FB4B70EA51 /* SlideNavigationContorllerAnimatorScaleAndFade.h */,
+				9A7A3BAE0FDF2BDB5EA84798182759DB /* SlideNavigationContorllerAnimatorScaleAndFade.m */,
+				F2E66A5351F9FA2A35BF830DB287C63A /* SlideNavigationContorllerAnimatorSlide.h */,
+				4249A4D0AE9FE5B618CA6C31E445C5A0 /* SlideNavigationContorllerAnimatorSlide.m */,
+				2C5DBBEEE56AD0F7240BF800399DAD7C /* SlideNavigationContorllerAnimatorSlideAndFade.h */,
+				96418860BD9CFFDC772158DCD15EC68B /* SlideNavigationContorllerAnimatorSlideAndFade.m */,
+				3CB0FF46F59C16555E3BAF657389963B /* SlideNavigationController.h */,
+				11EDDD80BF3915B215614AC70858E223 /* SlideNavigationController.m */,
+				83246AA0BC6DD253566E380EFCFEF645 /* Resources */,
+				F3E5093412408D37452B4F3679861969 /* Support Files */,
+			);
+			path = "iOS-Slide-Menu";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				42B70C0416154CBB7C10C498BD5C9247 /* Pods */,
+				90E24B32A4A68ABCDC9BE2C2379C675A /* Products */,
+				0803F0613843C710AAE176F9302B7679 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		83246AA0BC6DD253566E380EFCFEF645 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8576FCCD0B27C21391D611030B708779 /* menu-button.png */,
+				2C38764E2B7CB89BA6AC984C9C0498F3 /* menu-button@2x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		8A0FB96F72D0FF06649908DA8FF581DE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5B46F83FAA9FFABDA917BA7424B7C403 /* SVProgressHUD.xcconfig */,
+				755F8BD4F2D468EB35932B7FAACD34E0 /* SVProgressHUD-dummy.m */,
+				F29EE5DEFA174A81A834179A5C501887 /* SVProgressHUD-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SVProgressHUD";
+			sourceTree = "<group>";
+		};
+		8BB0CF9C62094703A323072ED97BF989 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C4B3E548F214E3E4A5FD7530202E759C /* SVProgressHUD.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		90E24B32A4A68ABCDC9BE2C2379C675A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA3CAE5270FD7856D0E20A3EE074AD8A /* libHTMLReader.a */,
+				5F8351FB1F5A629AB4EB2CBAB6F6207D /* libiOS-Slide-Menu.a */,
+				84A9061E6964E3AA9217640F14F1202A /* libPods-MMIS.a */,
+				066988CCAB544D4692A1FB35E22819E1 /* libSVProgressHUD.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B9FCF4F9D984A32652EBC729D8C616BB /* HTMLReader */ = {
+			isa = PBXGroup;
+			children = (
+				BFCB633B7EF80B11FB4EC8CA6EAA3045 /* HTMLComment.h */,
+				9F030FE0098F391DE40EC45B0EF30864 /* HTMLComment.m */,
+				2B448F509B55FA88C8D46505ABBD23E2 /* HTMLDocument.h */,
+				252D7B003DD40E1C5B608E0B9A5A5FC4 /* HTMLDocument.m */,
+				8F45345286D02675BE4F5C0AD66155B6 /* HTMLDocumentType.h */,
+				2B0B061A57AAB22BCEAB099B3CBF4C67 /* HTMLDocumentType.m */,
+				D61119004C774930D638F933DD1C8012 /* HTMLElement.h */,
+				A671C1CC177753401231BD1FE8BA9F17 /* HTMLElement.m */,
+				6EAAB9555E1D5403055490F5A30D6E1B /* HTMLEncoding.h */,
+				7BE1482C4DBA237F3FC8F06787961D1A /* HTMLEncoding.m */,
+				56602E3D0DF8FA9A5BDC24CB1ED37E43 /* HTMLEntities.h */,
+				F4F5593698E586AC6D6BD09560B7501C /* HTMLEntities.m */,
+				DC0E4C6EE8F9FBE49A1437CB66F4B217 /* HTMLNamespace.h */,
+				46F1B17349417A7F175A2E7824EFBA6A /* HTMLNode.h */,
+				0358456E57FD048964423D121739F580 /* HTMLNode.m */,
+				429F54779B5B0A14C1052441A67291CB /* HTMLOrderedDictionary.h */,
+				80AFA6699C1C84F4CCF2FDADCE5007DF /* HTMLOrderedDictionary.m */,
+				987AE4C60C0791CC9A69610FA3DD5683 /* HTMLParser.h */,
+				354E921E9149944B7A2963AB17D2E10C /* HTMLParser.m */,
+				752BA4FE744E6122EA55ED6F18F6593E /* HTMLPreprocessedInputStream.h */,
+				F073A2E32E6CE088D23B8669593838C6 /* HTMLPreprocessedInputStream.m */,
+				62943FAE865950F19F336958470055C9 /* HTMLQuirksMode.h */,
+				415B85B8101A5AEC9E20A90A1F52BCCF /* HTMLReader.h */,
+				E95F00A55EAE9D5ED2457EA59C1017D8 /* HTMLSelector.h */,
+				7C4A453409BC5621D36B6CE46A9C7079 /* HTMLSelector.m */,
+				3A373A7EB6E3023BC4C95E18D6457B28 /* HTMLSerialization.h */,
+				99FBD33EA392840EC488E036EE31900F /* HTMLSerialization.m */,
+				4543E4FE00304BA43EBB8499CDA69926 /* HTMLString.h */,
+				C6651DB7B310DC2995852B55F11384A3 /* HTMLString.m */,
+				3467F0B91CAC943B8F1DA516027F91E7 /* HTMLSupport.h */,
+				3967AEE2DF9F62BF388B0AEF4825E0F6 /* HTMLTextNode.h */,
+				68AD8A8088DF91B27C61989DF210EE59 /* HTMLTextNode.m */,
+				7F0258AAAED0721F4FFB55131A7113B7 /* HTMLTokenizer.h */,
+				54C7B348D04A94B2A0C820DEA8E18C45 /* HTMLTokenizer.m */,
+				A3709997570AD8BFB08ECF9EFB5F325A /* HTMLTokenizerState.h */,
+				A35A0E9ED0B1DDC0E49C76C69BBC2FA8 /* HTMLTreeEnumerator.h */,
+				DCFACEA2FC5B6B0992B8A2FD57E282E0 /* HTMLTreeEnumerator.m */,
+				0BC55CFCC0CDEEE9C754D2A285714DFA /* NSString+HTMLEntities.h */,
+				1B18B6BE8F9695370545F17195709633 /* NSString+HTMLEntities.m */,
+				0FE8C328FFD1650095456AC71E571A78 /* Support Files */,
+			);
+			path = HTMLReader;
+			sourceTree = "<group>";
+		};
+		C8EC8D6730B70536D30B590391285551 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				7D58A8BA79C9269CD68B3FBB4BA9F415 /* SVIndefiniteAnimatedView.h */,
+				1AA8CFF643FA1D28CB070237154AF169 /* SVIndefiniteAnimatedView.m */,
+				B7D11B97B5560C89FAC9902AC89E864C /* SVProgressAnimatedView.h */,
+				0FAED1341909CA55F48361FB8953E660 /* SVProgressAnimatedView.m */,
+				E314A66DF7E1ACCC12AAB345D27F1509 /* SVProgressHUD.h */,
+				7E2F58E4B0124542EE6DF2D89A63FC50 /* SVProgressHUD.m */,
+				8F8ACF5A8D69BA0311592758DF3A7FCC /* SVRadialGradientLayer.h */,
+				1CAB9BC3058D3ED9D8DDB1C91969AE1D /* SVRadialGradientLayer.m */,
+				8BB0CF9C62094703A323072ED97BF989 /* Resources */,
+				8A0FB96F72D0FF06649908DA8FF581DE /* Support Files */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		DFDE779C6E5D3445E0CB8CCB8D424449 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A817CAE99C81EE68006DC1E60E295C0A /* Foundation.framework */,
+				23016F69B2480F44D0BB5526B39192FA /* QuartzCore.framework */,
+				091D54A73E1E8BB182C9D7D245AF1C2F /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		F3E5093412408D37452B4F3679861969 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FCFB88FCCC28EC53305017ADE57210FA /* iOS-Slide-Menu.xcconfig */,
+				428A58CDDB4B8C53CAED76A7B422BA3A /* iOS-Slide-Menu-dummy.m */,
+				CC4FD17916D6C4E59F76993AB191BC8E /* iOS-Slide-Menu-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/iOS-Slide-Menu";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5FEF777AFEFC813559D35A5A504C8790 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				199C7EE74D790DA7EC2D318ABDD07A40 /* SVIndefiniteAnimatedView.h in Headers */,
+				C4699EB7D17A2E13610E666EA772AF4E /* SVProgressAnimatedView.h in Headers */,
+				824F40BDC07D1CAF5A98F52C8DAD6A51 /* SVProgressHUD.h in Headers */,
+				EAC48C3426C57791CDCE5BC684FA719B /* SVRadialGradientLayer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7569276CCB4766CCBBD1A8800CFF8BCD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B28A4A3728556BC38030D44698B5C41 /* SlideNavigationContorllerAnimator.h in Headers */,
+				83268FC838AE77C31EF8CC0D403A1F9E /* SlideNavigationContorllerAnimatorFade.h in Headers */,
+				278F621A27C8FBDE1483D9E585B6C0AD /* SlideNavigationContorllerAnimatorScale.h in Headers */,
+				223CE075A561DADB84D4B198313DB085 /* SlideNavigationContorllerAnimatorScaleAndFade.h in Headers */,
+				A38A5771356CC9885D0204A71CDCB048 /* SlideNavigationContorllerAnimatorSlide.h in Headers */,
+				3ED6F5B5DC137AF1D4B3F7875C35780E /* SlideNavigationContorllerAnimatorSlideAndFade.h in Headers */,
+				1CD39E52A50ED2DA0B0D625B3E257F98 /* SlideNavigationController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8BFF1001559463C35E27F209532919A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D1DC4D903C012CE57E026EEA7EC3BB8 /* HTMLComment.h in Headers */,
+				83FE41A88ACB88A2AA58F3173C7815A8 /* HTMLDocument.h in Headers */,
+				51B2DEEDC259F15971E0E44F42FCBF2B /* HTMLDocumentType.h in Headers */,
+				B6C01596DA2891EC28B891DE4F74155A /* HTMLElement.h in Headers */,
+				6752CD10A6A89EFCFBF1174688A0F3F2 /* HTMLEncoding.h in Headers */,
+				2AEE0AF056A83BEF4E3209EFFD8F4CC9 /* HTMLEntities.h in Headers */,
+				0B4FA9F7E7DD2216ADC93E17AD17062B /* HTMLNamespace.h in Headers */,
+				CAE34261735FDC0ACD9C2AB0E8FEEE77 /* HTMLNode.h in Headers */,
+				17E556C45C78CB8F421EB144D526019A /* HTMLOrderedDictionary.h in Headers */,
+				7A07330EE381A6E441E5B101477DF182 /* HTMLParser.h in Headers */,
+				133531AFBBE1710AAE309E65B8DCDA5D /* HTMLPreprocessedInputStream.h in Headers */,
+				AA04BC479C59828DE29438C6B99954EA /* HTMLQuirksMode.h in Headers */,
+				11CB21CE1DCC14FC242C2A053D92B01F /* HTMLReader.h in Headers */,
+				66BF2BAE7344FD10EA354C06158E708F /* HTMLSelector.h in Headers */,
+				215C13DE480A18BD8EEC47875C4D6D49 /* HTMLSerialization.h in Headers */,
+				E3653D706A29780C8D6108ACDCBD9A32 /* HTMLString.h in Headers */,
+				9310E8C6163C37AEC9B8772826BC2E53 /* HTMLSupport.h in Headers */,
+				49F0EB2ADD58B28F70BA8B2A4C03B457 /* HTMLTextNode.h in Headers */,
+				669ED72A5B44902AC667821FF52391CE /* HTMLTokenizer.h in Headers */,
+				EF7EBA710CED35452A6EAFF98FEF4D6C /* HTMLTokenizerState.h in Headers */,
+				22C96CC13986EF60B5805B11B41A41D6 /* HTMLTreeEnumerator.h in Headers */,
+				E1E56868CF38B1D6EE631C33871B647F /* NSString+HTMLEntities.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		01C8647DD33AEB6D8706D1A9DB17FA18 /* iOS-Slide-Menu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28B19BF9B02848DB514792DA183EE124 /* Build configuration list for PBXNativeTarget "iOS-Slide-Menu" */;
+			buildPhases = (
+				0AA26D69CAE959783532A88A0007167E /* Sources */,
+				63F8A7E4F33E969C0FD4E12887A9B2F3 /* Frameworks */,
+				7569276CCB4766CCBBD1A8800CFF8BCD /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iOS-Slide-Menu";
+			productName = "iOS-Slide-Menu";
+			productReference = 5F8351FB1F5A629AB4EB2CBAB6F6207D /* libiOS-Slide-Menu.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		7ACA8E0724B5085A47CF1AA8EFE72478 /* SVProgressHUD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA75ABE8A385B35E2FC18BB60E717736 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */;
+			buildPhases = (
+				8088D787EDC3579192CEE2E8946EC0B7 /* Sources */,
+				804ABB0309706E9DE75DD7B187D9E279 /* Frameworks */,
+				5FEF777AFEFC813559D35A5A504C8790 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SVProgressHUD;
+			productName = SVProgressHUD;
+			productReference = 066988CCAB544D4692A1FB35E22819E1 /* libSVProgressHUD.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		8E04B86BDB08F4A64D1494E7D1E5219B /* Pods-MMIS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 367935D2C9D8817ECB95EABDC725287B /* Build configuration list for PBXNativeTarget "Pods-MMIS" */;
+			buildPhases = (
+				7CAD576377CCAB9C3FA112A9D2B6C2C3 /* Sources */,
+				D432A40DD6A9FB721195335C9A83B74B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0AC4FDE306CC61C66B68E1B6EB52201 /* PBXTargetDependency */,
+				2F9BB08EDB63A698E3056D34DD4D774C /* PBXTargetDependency */,
+				A9B340EF131DD78C510D16EEC7CBE866 /* PBXTargetDependency */,
+			);
+			name = "Pods-MMIS";
+			productName = "Pods-MMIS";
+			productReference = 84A9061E6964E3AA9217640F14F1202A /* libPods-MMIS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E8EE6E444E93E358D850374D4AEAE64A /* HTMLReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A750B0E8A0E7D53B0FF9CF8EDC7D2992 /* Build configuration list for PBXNativeTarget "HTMLReader" */;
+			buildPhases = (
+				7115ACAED692C727210FA384544E40F1 /* Sources */,
+				63B153819BA94BA1A0CF2AF077D5120C /* Frameworks */,
+				B8BFF1001559463C35E27F209532919A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HTMLReader;
+			productName = HTMLReader;
+			productReference = AA3CAE5270FD7856D0E20A3EE074AD8A /* libHTMLReader.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 90E24B32A4A68ABCDC9BE2C2379C675A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E8EE6E444E93E358D850374D4AEAE64A /* HTMLReader */,
+				01C8647DD33AEB6D8706D1A9DB17FA18 /* iOS-Slide-Menu */,
+				8E04B86BDB08F4A64D1494E7D1E5219B /* Pods-MMIS */,
+				7ACA8E0724B5085A47CF1AA8EFE72478 /* SVProgressHUD */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0AA26D69CAE959783532A88A0007167E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65EF89283B88F58CAC348F6B6EE6E851 /* iOS-Slide-Menu-dummy.m in Sources */,
+				287E63E6D5C966BF31011686EDE8BEEE /* SlideNavigationContorllerAnimatorFade.m in Sources */,
+				E524B50639F4EE77F800A74B46CDD842 /* SlideNavigationContorllerAnimatorScale.m in Sources */,
+				73AA2E4357B6149E15E9F9972839A360 /* SlideNavigationContorllerAnimatorScaleAndFade.m in Sources */,
+				10DDC174E113914E3218E2B4B259F790 /* SlideNavigationContorllerAnimatorSlide.m in Sources */,
+				0E2149D8B067DAADF1DF26B2C7466719 /* SlideNavigationContorllerAnimatorSlideAndFade.m in Sources */,
+				0E97CF6069C3A68F7F3221670274B579 /* SlideNavigationController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7115ACAED692C727210FA384544E40F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F30A311597639922EEB9454DBEF3489C /* HTMLComment.m in Sources */,
+				0DF160931101F5B78074255316F6045D /* HTMLDocument.m in Sources */,
+				281DBC0D58A1E74AC826F552D495887A /* HTMLDocumentType.m in Sources */,
+				A8C3C1E94F7820D528A29C9D05C8B1F0 /* HTMLElement.m in Sources */,
+				C2188017524F3330422B6E22763533F8 /* HTMLEncoding.m in Sources */,
+				9DAFA08BA7BE404EFFB2CCD396C22D23 /* HTMLEntities.m in Sources */,
+				32AE2F78AA9B4FBA4610E47B80EC4388 /* HTMLNode.m in Sources */,
+				FF0170BA5CA7E257EEB73847E37296D6 /* HTMLOrderedDictionary.m in Sources */,
+				CB2D55757323696318156F6A1DF1C1A5 /* HTMLParser.m in Sources */,
+				79AD2D5F251C14908F273359E8B46AAF /* HTMLPreprocessedInputStream.m in Sources */,
+				890C0AFCFC9FB6414EFAD635C9CCF808 /* HTMLReader-dummy.m in Sources */,
+				ED619751D9A5A0E7299C65F4810A475E /* HTMLSelector.m in Sources */,
+				22DC43F1A23AF57149E1D204FEBDA843 /* HTMLSerialization.m in Sources */,
+				9B6E7997A0F28232180CB057C8C5665D /* HTMLString.m in Sources */,
+				CB33515D9DC56B4D74449AC204FE5F8C /* HTMLTextNode.m in Sources */,
+				D080E3E03172FC2309B52EE7973DE043 /* HTMLTokenizer.m in Sources */,
+				953870BDC3D0A09A739FDCF49FBDFD8C /* HTMLTreeEnumerator.m in Sources */,
+				9A049B26B146AD30D963E877D58C436D /* NSString+HTMLEntities.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CAD576377CCAB9C3FA112A9D2B6C2C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3D64874C3848E5BAEC313841037BA48 /* Pods-MMIS-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8088D787EDC3579192CEE2E8946EC0B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C21CADF8E124CD8B96D6DBFEA0D4AADB /* SVIndefiniteAnimatedView.m in Sources */,
+				5D9B814EBA4FFDF5B9110AFB6BEE70AA /* SVProgressAnimatedView.m in Sources */,
+				7C808486DEEA3C0DAD42C012A1A4DA04 /* SVProgressHUD-dummy.m in Sources */,
+				DC6AEC282650829AE6820DEB7BD56EF4 /* SVProgressHUD.m in Sources */,
+				E8040DAA7EF88053A734B3D9DEAE9FC4 /* SVRadialGradientLayer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2F9BB08EDB63A698E3056D34DD4D774C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SVProgressHUD;
+			target = 7ACA8E0724B5085A47CF1AA8EFE72478 /* SVProgressHUD */;
+			targetProxy = 2FF933C49C317C95C6B262D1F02EC30A /* PBXContainerItemProxy */;
+		};
+		A9B340EF131DD78C510D16EEC7CBE866 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "iOS-Slide-Menu";
+			target = 01C8647DD33AEB6D8706D1A9DB17FA18 /* iOS-Slide-Menu */;
+			targetProxy = 1F2ACB5810E85A28FDA576ACABA302BB /* PBXContainerItemProxy */;
+		};
+		C0AC4FDE306CC61C66B68E1B6EB52201 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HTMLReader;
+			target = E8EE6E444E93E358D850374D4AEAE64A /* HTMLReader */;
+			targetProxy = E5E26D15721BA687194308C6ADE34E45 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		13FA0B1134B453239C00ECF3C0F4DA00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21F78CABEE3428ABE92454744D3FBC1A /* Pods-MMIS.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		44FD34FB458BA2EA5A5F77F190A2E4ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B46F83FAA9FFABDA917BA7424B7C403 /* SVProgressHUD.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		47BEF9D903506B003EA5C2B249729489 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		4EA07AEC5C8C6751784E25B88F0D59AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2402126DA0B4FFCF4D56DF10BBE47574 /* Pods-MMIS.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		51B960B07449CDD49A6582B6348B4866 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67EA9925407FFE2A5EB196131742B689 /* HTMLReader.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/HTMLReader/HTMLReader-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		62C00FA01CECCE095B3C0131CF96FAD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCFB88FCCC28EC53305017ADE57210FA /* iOS-Slide-Menu.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/iOS-Slide-Menu/iOS-Slide-Menu-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		6E451735FDBBE1DA177AFC1CF5CCAA38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67EA9925407FFE2A5EB196131742B689 /* HTMLReader.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/HTMLReader/HTMLReader-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		AAF678CED40D3499169D10F63CA0719E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C30662985F8C4C315C487100CC80D054 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCFB88FCCC28EC53305017ADE57210FA /* iOS-Slide-Menu.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/iOS-Slide-Menu/iOS-Slide-Menu-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F6441416E532D034295ED33DE38A5A8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B46F83FAA9FFABDA917BA7424B7C403 /* SVProgressHUD.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28B19BF9B02848DB514792DA183EE124 /* Build configuration list for PBXNativeTarget "iOS-Slide-Menu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C30662985F8C4C315C487100CC80D054 /* Debug */,
+				62C00FA01CECCE095B3C0131CF96FAD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47BEF9D903506B003EA5C2B249729489 /* Debug */,
+				AAF678CED40D3499169D10F63CA0719E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		367935D2C9D8817ECB95EABDC725287B /* Build configuration list for PBXNativeTarget "Pods-MMIS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EA07AEC5C8C6751784E25B88F0D59AC /* Debug */,
+				13FA0B1134B453239C00ECF3C0F4DA00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A750B0E8A0E7D53B0FF9CF8EDC7D2992 /* Build configuration list for PBXNativeTarget "HTMLReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E451735FDBBE1DA177AFC1CF5CCAA38 /* Debug */,
+				51B960B07449CDD49A6582B6348B4866 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA75ABE8A385B35E2FC18BB60E717736 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44FD34FB458BA2EA5A5F77F190A2E4ED /* Debug */,
+				F6441416E532D034295ED33DE38A5A8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

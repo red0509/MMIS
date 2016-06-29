@@ -1,15 +1,16 @@
 //
 //  ViewController.h
-//  MMIS
+//  DGTU
 //
-//  Created by Anton Pavlov on 29.06.16.
-//  Copyright © 2016 Anton Pavlov. All rights reserved.
+//  Created by Anton Pavlov on 27.12.15.
+//  Copyright © 2015 Anton Pavlov. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIButton *button;
 
 @end
 
