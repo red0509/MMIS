@@ -135,12 +135,12 @@ static SlideNavigationController *singletonInstance;
 	[super viewWillLayoutSubviews];
     
     
-//    [self.navigationBar setBackgroundImage:[UIImage imageNamed:@"NavBar.png"] forBarMetrics:UIBarMetricsDefault];
-//    self.navigationBar.shadowImage = [UIImage new];
-//    self.navigationBar.translucent = YES;
-//    self.navigationBar.barTintColor = [UIColor clearColor];
-//    self.view.backgroundColor = [UIColor clearColor];
-//    self.navigationBar.backgroundColor = [UIColor clearColor];
+    [self.navigationBar setBackgroundImage:[UIImage imageNamed:@"NavBar.png"] forBarMetrics:UIBarMetricsDefault];
+    self.navigationBar.shadowImage = [UIImage new];
+    self.navigationBar.translucent = YES;
+    self.navigationBar.barTintColor = [UIColor clearColor];
+    self.view.backgroundColor = [UIColor clearColor];
+    self.navigationBar.backgroundColor = [UIColor clearColor];
 	
 	// Update shadow size of enabled
 	if (self.enableShadow)

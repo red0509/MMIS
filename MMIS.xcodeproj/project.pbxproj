@@ -51,6 +51,9 @@
 		CE441D2E1D243DF2009B7257 /* libPods-MMIS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE441D2D1D243DF2009B7257 /* libPods-MMIS.a */; };
 		CE441D341D24432C009B7257 /* DGTU.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE441D321D24432C009B7257 /* DGTU.xcdatamodeld */; };
 		CE441D361D2446ED009B7257 /* TableViewHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = CE441D351D2446ED009B7257 /* TableViewHelp.m */; };
+		CEF54C621D26BCB700F20E0D /* StatisTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF54C611D26BCB700F20E0D /* StatisTableView.m */; };
+		CEF54C651D26C64000F20E0D /* StatisKafTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF54C641D26C64000F20E0D /* StatisKafTableView.m */; };
+		CEF54C681D2702E700F20E0D /* KafTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF54C671D2702E700F20E0D /* KafTableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -140,6 +143,12 @@
 		CE441D2D1D243DF2009B7257 /* libPods-MMIS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-MMIS.a"; path = "../../../Library/Developer/Xcode/DerivedData/MMIS-covhdxbjycbnpffvzmgwccumxcum/Build/Products/Debug-iphonesimulator/libPods-MMIS.a"; sourceTree = "<group>"; };
 		CE441D331D24432C009B7257 /* DGTU.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DGTU.xcdatamodel; sourceTree = "<group>"; };
 		CE441D351D2446ED009B7257 /* TableViewHelp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewHelp.m; sourceTree = "<group>"; };
+		CEF54C601D26BCB700F20E0D /* StatisTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StatisTableView.h; path = Statistics/StatisTableView.h; sourceTree = "<group>"; };
+		CEF54C611D26BCB700F20E0D /* StatisTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StatisTableView.m; path = Statistics/StatisTableView.m; sourceTree = "<group>"; };
+		CEF54C631D26C64000F20E0D /* StatisKafTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StatisKafTableView.h; path = Statistics/StatisKafTableView.h; sourceTree = "<group>"; };
+		CEF54C641D26C64000F20E0D /* StatisKafTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StatisKafTableView.m; path = Statistics/StatisKafTableView.m; sourceTree = "<group>"; };
+		CEF54C661D2702E700F20E0D /* KafTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KafTableView.h; path = Statistics/KafTableView.h; sourceTree = "<group>"; };
+		CEF54C671D2702E700F20E0D /* KafTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KafTableView.m; path = Statistics/KafTableView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +201,7 @@
 		CE441C861D24395D009B7257 /* MMIS */ = {
 			isa = PBXGroup;
 			children = (
+				CEF54C5F1D26B76400F20E0D /* Statistics */,
 				CE441D261D243BED009B7257 /* Department */,
 				CE441D111D243BC5009B7257 /* Favorites */,
 				CE441CE81D243BB2009B7257 /* Group */,
@@ -242,11 +252,11 @@
 			children = (
 				CE441CB51D243B11009B7257 /* Clamping */,
 				CE441CB81D243B11009B7257 /* Department */,
+				CE441CC11D243B11009B7257 /* Tima Table */,
 				CE441CBB1D243B11009B7257 /* TabBarTeacher.h */,
 				CE441CBC1D243B11009B7257 /* TabBarTeacher.m */,
 				CE441CBF1D243B11009B7257 /* TableViewTeacher.h */,
 				CE441CC01D243B11009B7257 /* TableViewTeacher.m */,
-				CE441CC11D243B11009B7257 /* Tima Table */,
 			);
 			path = Teacher;
 			sourceTree = "<group>";
@@ -422,6 +432,19 @@
 			path = Department;
 			sourceTree = "<group>";
 		};
+		CEF54C5F1D26B76400F20E0D /* Statistics */ = {
+			isa = PBXGroup;
+			children = (
+				CEF54C601D26BCB700F20E0D /* StatisTableView.h */,
+				CEF54C611D26BCB700F20E0D /* StatisTableView.m */,
+				CEF54C631D26C64000F20E0D /* StatisKafTableView.h */,
+				CEF54C641D26C64000F20E0D /* StatisKafTableView.m */,
+				CEF54C661D2702E700F20E0D /* KafTableView.h */,
+				CEF54C671D2702E700F20E0D /* KafTableView.m */,
+			);
+			name = Statistics;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -552,6 +575,7 @@
 				CE441D211D243BC5009B7257 /* TableViewFav.m in Sources */,
 				CE441D051D243BB2009B7257 /* TableViewCellGraph.m in Sources */,
 				CE441D0C1D243BB2009B7257 /* TableViewControllerSelection.m in Sources */,
+				CEF54C651D26C64000F20E0D /* StatisKafTableView.m in Sources */,
 				CE441D2B1D243BED009B7257 /* TableViewCellDept.m in Sources */,
 				CE441C8F1D24395D009B7257 /* ViewController.m in Sources */,
 				CE441C8C1D24395D009B7257 /* AppDelegate.m in Sources */,
@@ -570,11 +594,13 @@
 				CE441D101D243BB2009B7257 /* TableViewControllerGroup.m in Sources */,
 				CE441D2C1D243BED009B7257 /* TableViewControllerDept.m in Sources */,
 				CE441D1F1D243BC5009B7257 /* TableViewGraphFav.m in Sources */,
+				CEF54C621D26BCB700F20E0D /* StatisTableView.m in Sources */,
 				CE441C891D24395D009B7257 /* main.m in Sources */,
 				CE441CB21D243AFF009B7257 /* LeftMenuViewController.m in Sources */,
 				CE441CCC1D243B11009B7257 /* ViewControllerPageTeacher.m in Sources */,
 				CE441D201D243BC5009B7257 /* TableViewControllerSelFav.m in Sources */,
 				CE441CCA1D243B11009B7257 /* TableViewTeacher.m in Sources */,
+				CEF54C681D2702E700F20E0D /* KafTableView.m in Sources */,
 				CE441CB31D243AFF009B7257 /* TableViewCellMenu.m in Sources */,
 				CE441CCB1D243B11009B7257 /* TableViewPageContTeacher.m in Sources */,
 				CE441CD31D243B4C009B7257 /* TableViewSettingsUniversity.m in Sources */,

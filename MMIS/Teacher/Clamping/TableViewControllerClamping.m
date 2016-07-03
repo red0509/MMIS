@@ -206,11 +206,11 @@
                 [self.tableView reloadData];
             }
             
-            NSLog(@"%ld",[self.timeArray count]);
-            NSLog(@"%ld",[self.subjectArray count]);
-            NSLog(@"%ld",[self.groupArray count]);
-            NSLog(@"%ld",[self.classroomArray count]);
-            NSLog(@"%ld",[self.dateArray count]);
+            NSLog(@"%ld",(unsigned long)[self.timeArray count]);
+            NSLog(@"%ld",(unsigned long)[self.subjectArray count]);
+            NSLog(@"%ld",(unsigned long)[self.groupArray count]);
+            NSLog(@"%ld",(unsigned long)[self.classroomArray count]);
+            NSLog(@"%ld",(unsigned long)[self.dateArray count]);
             for (NSMutableString *time in self.timeArray) {
                 
                 NSRange range = [time rangeOfString:@":"];

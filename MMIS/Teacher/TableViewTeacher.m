@@ -17,6 +17,9 @@
 @property (strong,nonatomic) NSMutableArray *name;
 @property (strong,nonatomic) NSMutableArray *ref;
 
+@property (strong, nonatomic) NSMutableArray *searchResult;
+@property (strong,nonatomic) UISearchController *resultSearchController ;
+
 @end
 
 @implementation TableViewTeacher
@@ -28,8 +31,23 @@
     self.tableView.rowHeight = UITableViewAutomaticDimension;
     self.title = @"Преподаватели";
     self.navigationController.interactivePopGestureRecognizer.enabled = NO;
+    
+    self.searchResult = [NSMutableArray arrayWithCapacity:[self.name count]];
+    self.resultSearchController = [[UISearchController alloc]initWithSearchResultsController:nil];
+    self.resultSearchController.searchResultsUpdater = self;
+    self.resultSearchController.dimsBackgroundDuringPresentation = NO;
+    self.resultSearchController.searchBar.placeholder = @"Поиск";
+    self.resultSearchController.searchBar.tintColor = [UIColor whiteColor];
+    [self.resultSearchController.searchBar sizeToFit];
+    self.tableView.tableHeaderView = self.resultSearchController.searchBar;
+    self.definesPresentationContext = YES;
+    
     [self loadDept];
 
+}
+
+-(void)dealloc {
+    [self.resultSearchController.view removeFromSuperview];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -117,7 +135,15 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [self.name count];
+    
+    if (self.resultSearchController.active)
+    {
+        return [self.searchResult count];
+    }
+    else
+    {
+        return [self.name count];
+    }
 }
 
 
@@ -129,9 +155,14 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
     }
     
-    cell.textLabel.text = self.name[indexPath.row];
-    
-    
+    if (self.resultSearchController.active)
+    {
+        cell.textLabel.text = [self.searchResult objectAtIndex:indexPath.row];
+    }
+    else
+    {
+        cell.textLabel.text = self.name[indexPath.row];
+    }
     return cell;
     
 }
@@ -140,11 +171,43 @@
     
     TabBarTeacher * tabBarTeacher = [self.storyboard  instantiateViewControllerWithIdentifier:@"TabBarTeacher"];
 //    tabBarTeacher.reference = [NSString stringWithFormat:@"http://stud.sssu.ru/Rasp/%@",[self.ref[indexPath.row] stringByAddingPercentEscapesUsingEncoding:NSWindowsCP1251StringEncoding]];
+    
     NSCharacterSet *set = [NSCharacterSet URLFragmentAllowedCharacterSet];
-    tabBarTeacher.reference = [NSString stringWithFormat:@"http://stud.sssu.ru/Rasp/%@",[self.ref[indexPath.row]    stringByAddingPercentEncodingWithAllowedCharacters:set]];
-    tabBarTeacher.surname = self.name[indexPath.row];
+    
+    if (self.resultSearchController.active)
+    {
+        tabBarTeacher.surname = self.searchResult[indexPath.row];
+        
+        for (int i = 0; i < [self.name count]; i++) {
+            if ([self.name[i] isEqualToString:self.searchResult[indexPath.row]]) {
+                tabBarTeacher.reference = [NSString stringWithFormat:@"http://stud.sssu.ru/Rasp/%@",[self.ref[i]    stringByAddingPercentEncodingWithAllowedCharacters:set]];
+                
+            }
+        }
+    }
+    else
+    {
+        tabBarTeacher.reference = [NSString stringWithFormat:@"http://stud.sssu.ru/Rasp/%@",[self.ref[indexPath.row]    stringByAddingPercentEncodingWithAllowedCharacters:set]];
+        tabBarTeacher.surname = self.name[indexPath.row];
+        
+    }
 
 
     [self.navigationController pushViewController:tabBarTeacher animated:YES];
+}
+
+
+#pragma mark - UISearchResultsUpdating
+
+
+- (void)updateSearchResultsForSearchController:(UISearchController *)searchController{
+    
+    [self.searchResult removeAllObjects];
+    
+    NSPredicate *resultPredicate = [NSPredicate predicateWithFormat:@"SELF contains[c] %@", searchController.searchBar.text];
+    
+    self.searchResult = [NSMutableArray arrayWithArray: [self.name filteredArrayUsingPredicate:resultPredicate]];
+    [self.tableView reloadData];
+    
 }
 @end

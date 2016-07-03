@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PlanTableView : UITableViewController
+@interface PlanTableView : UITableViewController <UISearchResultsUpdating>
 
 @end

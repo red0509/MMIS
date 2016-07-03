@@ -166,7 +166,7 @@
     [self.pointArray addObject:type];
     
     tableViewRegisterContent.arrayPage = self.pointArray;
-
+    
     if([type isEqualToString:@"Курсовой проект" ]){
         tableViewRegisterContent.arrayPage = @[@"Курсовой проект"];
     }else if([type isEqualToString:@"Курсовая работа" ]){
@@ -188,62 +188,60 @@
 
 -(void) loadPoint: (NSString*) URLFacul{
     
-        self.pointArray = [NSMutableArray array];
-        
-        NSURL *URLTime = [NSURL URLWithString:URLFacul];
-        NSError *errorData = nil;
-        NSData *data = [[NSData alloc]initWithContentsOfURL:URLTime options:NSDataReadingUncached error:&errorData];
-        
-//        NSString *contentType = @"text/html; charset=windows-1251";
-        NSString *contentType = @"text/html; charset=utf-8";
-
+    self.pointArray = [NSMutableArray array];
     
-            if (errorData != nil) {
-                
-            } else {
-                
-                HTMLDocument *home = [HTMLDocument documentWithData:data
-                                                  contentTypeHeader:contentType];
-                
-                HTMLElement *div = [home firstNodeMatchingSelector:@"#ucVedBox_Row1 > td:nth-child(19)"];
-                
-                if ([div.textContent isEqualToString:@"Точка 6"]) {
-                    [self.pointArray insertObject:@"КT 6" atIndex:0];
-                }
-                
-                div = [home firstNodeMatchingSelector:@"#ucVedBox_Row1 > td:nth-child(16)"];
-                
-                if ([div.textContent isEqualToString:@"Точка 5"]) {
-                    [self.pointArray insertObject:@"КT 5" atIndex:0];
-                }
-                
-                div = [home firstNodeMatchingSelector:@"#ucVedBox_Row1 > td:nth-child(13)"];
-                
-                if ([div.textContent isEqualToString:@"Точка 4"]) {
-                    [self.pointArray insertObject:@"КT 4" atIndex:0];
-                }
-                
-                div = [home firstNodeMatchingSelector:@"#ucVedBox_Row1 > td:nth-child(10)"];
-                
-                if ([div.textContent isEqualToString:@"Точка 3"]) {
-                    [self.pointArray insertObject:@"КT 3" atIndex:0];
-                }
-                
-                div = [home firstNodeMatchingSelector:@"#ucVedBox_Row1 > td:nth-child(7)"];
-                
-                if ([div.textContent isEqualToString:@"Точка 2"]) {
-                    [self.pointArray insertObject:@"КT 2" atIndex:0];
-                }
-                
-                div = [home firstNodeMatchingSelector:@"#ucVedBox_Row1 > td:nth-child(4)"];
-                
-                if ([div.textContent isEqualToString:@"Точка 1"]) {
-                    [self.pointArray insertObject:@"КT 1" atIndex:0];
-                }
-                
-            }
-            
+    NSURL *URLTime = [NSURL URLWithString:URLFacul];
+    NSError *errorData = nil;
+    NSData *data = [[NSData alloc]initWithContentsOfURL:URLTime options:NSDataReadingUncached error:&errorData];
     
+    //        NSString *contentType = @"text/html; charset=windows-1251";
+    NSString *contentType = @"text/html; charset=utf-8";
+    
+    
+    if (errorData != nil) {
+        
+    } else {
+        
+        HTMLDocument *home = [HTMLDocument documentWithData:data
+                                          contentTypeHeader:contentType];
+        
+        HTMLElement *div = [home firstNodeMatchingSelector:@"#ucVedBox_Row1 > td:nth-child(19)"];
+        
+        if ([div.textContent isEqualToString:@"Точка 6"]) {
+            [self.pointArray insertObject:@"КT 6" atIndex:0];
+        }
+        
+        div = [home firstNodeMatchingSelector:@"#ucVedBox_Row1 > td:nth-child(16)"];
+        
+        if ([div.textContent isEqualToString:@"Точка 5"]) {
+            [self.pointArray insertObject:@"КT 5" atIndex:0];
+        }
+        
+        div = [home firstNodeMatchingSelector:@"#ucVedBox_Row1 > td:nth-child(13)"];
+        
+        if ([div.textContent isEqualToString:@"Точка 4"]) {
+            [self.pointArray insertObject:@"КT 4" atIndex:0];
+        }
+        
+        div = [home firstNodeMatchingSelector:@"#ucVedBox_Row1 > td:nth-child(10)"];
+        
+        if ([div.textContent isEqualToString:@"Точка 3"]) {
+            [self.pointArray insertObject:@"КT 3" atIndex:0];
+        }
+        
+        div = [home firstNodeMatchingSelector:@"#ucVedBox_Row1 > td:nth-child(7)"];
+        
+        if ([div.textContent isEqualToString:@"Точка 2"]) {
+            [self.pointArray insertObject:@"КT 2" atIndex:0];
+        }
+        
+        div = [home firstNodeMatchingSelector:@"#ucVedBox_Row1 > td:nth-child(4)"];
+        
+        if ([div.textContent isEqualToString:@"Точка 1"]) {
+            [self.pointArray insertObject:@"КT 1" atIndex:0];
+        }
+        
+    }
 }
 
 

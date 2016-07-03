@@ -13,6 +13,7 @@
 
 
 @interface TableViewControllerDept ()
+
 @property (strong,nonatomic) NSMutableArray *name;
 @property (strong,nonatomic) NSMutableArray *zavDept;
 @property (strong,nonatomic) NSMutableArray *number;

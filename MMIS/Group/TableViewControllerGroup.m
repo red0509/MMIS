@@ -19,7 +19,7 @@
 @property (strong,nonatomic) NSMutableArray *EFfacul;
 @property (strong,nonatomic) NSMutableArray *EFfaculReferences;
 
-
+@property (strong, nonatomic) NSMutableArray *searchResult;
 @property (strong,nonatomic) UISearchController *resultSearchController ;
 
 @end
@@ -31,6 +31,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = self.titleName;
+    
     self.searchResult = [NSMutableArray arrayWithCapacity:[self.EFfacul count]];
     self.resultSearchController = [[UISearchController alloc]initWithSearchResultsController:nil];
     self.resultSearchController.searchResultsUpdater = self;
@@ -40,6 +41,7 @@
     [self.resultSearchController.searchBar sizeToFit];
     self.tableView.tableHeaderView = self.resultSearchController.searchBar;
     self.definesPresentationContext = YES;
+    
     if ([self.navigationController respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
         self.navigationController.interactivePopGestureRecognizer.enabled = NO;
     }

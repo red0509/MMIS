@@ -11,6 +11,8 @@
 #import "SlideNavigationContorllerAnimatorSlideAndFade.h"
 #import "TableViewSettings.h"
 #import "PlanTableView.h"
+#import "StatisTableView.h"
+
 
 #define IDIOM    UI_USER_INTERFACE_IDIOM()
 #define IPAD     UIUserInterfaceIdiomPad
@@ -86,7 +88,7 @@
     NSInteger numberDefaults = [defaults integerForKey:@"number"];
     NSInteger count;
     if (numberDefaults == 0) {
-        count = 8;
+        count = 9;
     } else if (numberDefaults == 1){
         count = 6;
     }
@@ -116,12 +118,12 @@
         {
                 
             case 0:
-                cell.labelName.text = @"Преподаватель";
+                cell.labelName.text = @"Преподаватели";
                 cell.image.image = [UIImage imageNamed:@"social.png"];
                 break;
                 
             case 1:
-                cell.labelName.text = @"Учебная группа";
+                cell.labelName.text = @"Группы";
                 cell.image.image = [UIImage imageNamed:@"users.png"];
                 break;
                 
@@ -136,21 +138,26 @@
                 break;
                 
             case 4:
-                cell.labelName.text = @"Учебные планы";
+                cell.labelName.text = @"Планы";
                 cell.image.image = [UIImage imageNamed:@"book.png"];
                 break;
                 
             case 5:
+                cell.labelName.text = @"Статистика";
+                cell.image.image = [UIImage imageNamed:@"statis.png"];
+                break;
+                
+            case 6:
                 cell.labelName.text = @"Настройки";
                 cell.image.image = [UIImage imageNamed:@"settings.png"];
                 break;
                 
-            case 6:
+            case 7:
                 cell.labelName.text = @"Справка";
                 cell.image.image = [UIImage imageNamed:@"signs.png"];
                 break;
                 
-            case 7:
+            case 8:
                 cell.labelName.text = @"О программе";
                 cell.image.image = [UIImage imageNamed:@"information-button.png"];
                 break;
@@ -229,15 +236,17 @@
             case 4:
                 vc = [[PlanTableView alloc] init];
                 break;
-                
             case 5:
+                vc = [[StatisTableView alloc]init];
+                break;
+            case 6:
                 vc = [[TableViewSettings alloc] init];
                 break;
                 
-            case 6:
+            case 7:
                 vc = [mainStoryboard instantiateViewControllerWithIdentifier: @"TableViewHelp"];
                 break;
-            case 7:
+            case 8:
                 vc = [mainStoryboard instantiateViewControllerWithIdentifier: @"InfoController"];
                 break;
         }

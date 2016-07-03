@@ -10,6 +10,8 @@
 #import <HTMLReader.h>
 #import "PlanViewController.h"
 #import "LeftMenuViewController.h"
+#import "SVProgressHUD.h"
+
 
 
 
@@ -19,6 +21,8 @@
 @property (strong,nonatomic) NSMutableArray *planArray;
 @property (strong,nonatomic) NSMutableArray *planRefArray;
 
+@property (strong, nonatomic) NSMutableArray *searchResult;
+@property (strong,nonatomic) UISearchController *resultSearchController ;
 @end
 
 @implementation PlanTableView
@@ -36,13 +40,28 @@
     UIBarButtonItem *leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:image style:UIBarButtonItemStylePlain target:self action:@selector(slideMenu)];
     self.navigationItem.leftBarButtonItem = leftBarButtonItem;
     
+    [[NSNotificationCenter defaultCenter] addObserverForName:SlideNavigationControllerDidOpen object:nil queue:nil usingBlock:^(NSNotification *note) {
+        [SVProgressHUD dismiss];
+    }];
+    
+    self.searchResult = [NSMutableArray arrayWithCapacity:[self.nameArray count]];
+    self.resultSearchController = [[UISearchController alloc]initWithSearchResultsController:nil];
+    self.resultSearchController.searchResultsUpdater = self;
+    self.resultSearchController.dimsBackgroundDuringPresentation = NO;
+    self.resultSearchController.searchBar.placeholder = @"Поиск";
+    self.resultSearchController.searchBar.tintColor = [UIColor whiteColor];
+    [self.resultSearchController.searchBar sizeToFit];
+    self.tableView.tableHeaderView = self.resultSearchController.searchBar;
+    self.definesPresentationContext = YES;
 }
 
 -(void) slideMenu{
-    
     [[SlideNavigationController sharedInstance] toggleLeftMenu];
 }
 
+-(void)dealloc {
+    [self.resultSearchController.view removeFromSuperview];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -57,6 +76,7 @@
 
 
 -(void) loadDept{
+
     
     self.nameArray = [NSMutableArray array];
     self.planArray = [NSMutableArray array];
@@ -96,6 +116,14 @@
                   });
               }else{
                   
+                  [SVProgressHUD setDefaultStyle:SVProgressHUDStyleCustom];
+                  [SVProgressHUD setDefaultAnimationType:SVProgressHUDAnimationTypeNative];
+                  [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeNone];
+                  [SVProgressHUD setForegroundColor:[UIColor whiteColor]];
+                  [SVProgressHUD setBackgroundColor:[UIColor grayColor]];
+                  
+                  [SVProgressHUD show];
+                  
                   NSString *contentType = nil;
                   if ([response isKindOfClass:[NSHTTPURLResponse class]]) {
                       NSDictionary *headers = [(NSHTTPURLResponse *)response allHeaderFields];
@@ -103,7 +131,7 @@
                   }
                  
                   
-                  dispatch_async(dispatch_get_main_queue(), ^{
+                  
                       
                       NSInteger dayNum = 2;
                       HTMLElement *name;
@@ -130,10 +158,11 @@
                           }
                           
                           dayNum++;
-                          [self.tableView reloadData];
+                          
                       }
-                      
-                      
+                     dispatch_async(dispatch_get_main_queue(), ^{
+                      [SVProgressHUD dismiss];
+                         [self.tableView reloadData];
                   });
               }
             
@@ -142,7 +171,14 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return [self.nameArray count];
+    if (self.resultSearchController.active)
+    {
+        return [self.searchResult count];
+    }
+    else
+    {
+        return [self.nameArray count];
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -153,12 +189,26 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier] ;
     }
     
+    if (self.resultSearchController.active){
+        cell.textLabel.text = self.searchResult[indexPath.row];
+        for (int i = 0; i < [self.nameArray count]; i++) {
+            if ([self.nameArray[i] isEqualToString:self.searchResult[indexPath.row]]) {
+                
+                cell.detailTextLabel.text = self.planArray[i];
+                
+            }
+        }
+    }else{
+        cell.textLabel.text = self.nameArray[indexPath.row];
+        cell.detailTextLabel.text = self.planArray[indexPath.row];
         
-    cell.textLabel.text = self.nameArray[indexPath.row];
-    cell.detailTextLabel.text = self.planArray[indexPath.row];
-    
+    }
+        
+
+    cell.textLabel.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:17];
     cell.textLabel.lineBreakMode = NSLineBreakByWordWrapping;
     cell.textLabel.numberOfLines = 0;
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     return cell;
 }
 
@@ -170,12 +220,44 @@
 
     PlanViewController *planViewController = [mainStoryboard instantiateViewControllerWithIdentifier:@"PlanViewController"];
     
-    planViewController.reference = self.planRefArray[indexPath.row];
-    planViewController.plan = self.planArray[indexPath.row];
+
+    
+    if (self.resultSearchController.active)
+    {
+        for (int i = 0; i < [self.nameArray count]; i++) {
+            if ([self.nameArray[i] isEqualToString:self.searchResult[indexPath.row]]) {
+
+                planViewController.reference = self.planRefArray[i];
+                planViewController.plan = self.planArray[i];
+                
+            }
+        }
+    }
+    else
+    {
+        planViewController.reference = self.planRefArray[indexPath.row];
+        planViewController.plan = self.planArray[indexPath.row];
+        
+    }
     
     [self.navigationController pushViewController:planViewController animated:YES];
+    
+    
 }
 
+#pragma mark - UISearchResultsUpdating
+
+
+- (void)updateSearchResultsForSearchController:(UISearchController *)searchController{
+    
+    [self.searchResult removeAllObjects];
+    
+    NSPredicate *resultPredicate = [NSPredicate predicateWithFormat:@"SELF contains[c] %@", searchController.searchBar.text];
+    
+    self.searchResult = [NSMutableArray arrayWithArray: [self.nameArray filteredArrayUsingPredicate:resultPredicate]];
+    [self.tableView reloadData];
+    
+}
 
 
 @end

@@ -44,7 +44,6 @@
     }
     
     self.segmented.selectedSegmentIndex = 0;
-//    [self actionSegmented:self.segmented];
     
     self.navigationController.interactivePopGestureRecognizer.enabled = NO;
     self.viewSeg.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"NavBar.png"]];

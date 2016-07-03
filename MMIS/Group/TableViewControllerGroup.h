@@ -21,5 +21,5 @@
 @property NSString *titleName;
 @property NSString *referenceUniversity;
 
-@property (strong, nonatomic) NSMutableArray *searchResult;
+
 @end

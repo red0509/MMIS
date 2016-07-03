@@ -83,7 +83,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 5;
+    return 6;
 }
 
 
@@ -106,6 +106,9 @@
             break;
         case 4:
             cell.textLabel.text = @"Кафедры - информация о телефонах, аудиториях кафедр";
+            break;
+        case 5:
+            cell.textLabel.text = @"Планы - рабочие учебные планы на весь срок обучения";
             break;
             
         default:

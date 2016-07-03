@@ -31,8 +31,10 @@
 @property (strong,nonatomic) NSMutableArray *lab;
 @property (strong,nonatomic) NSMutableArray *KSR;
 @property (strong,nonatomic) NSMutableArray *numbers;
+@property (strong,nonatomic) NSMutableArray *bloc;
 
-@property  BOOL external;
+@property BOOL exit;
+@property BOOL external;
 
 @end
 
@@ -40,6 +42,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.exit = NO;
     
     self.tableView.estimatedRowHeight = 135.0;
     self.tableView.rowHeight = UITableViewAutomaticDimension;
@@ -68,7 +71,10 @@
     [self loadDept];
 }
 
-
+- (void) viewWillDisappear:(BOOL)animated{
+     [super viewWillDisappear:animated];
+    self.exit = YES;
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -218,8 +224,11 @@
                   });
               }else{
                   
-                  [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeBlack];
+                  [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeNone];
                   [SVProgressHUD setDefaultAnimationType:SVProgressHUDAnimationTypeNative];
+                  [SVProgressHUD setDefaultStyle:SVProgressHUDStyleCustom];
+                  [SVProgressHUD setBackgroundColor:[UIColor grayColor]];
+                  [SVProgressHUD setForegroundColor:[UIColor whiteColor]];
                   [SVProgressHUD showProgress:0 status:@"Загрузка.."];
                   
                   NSString *contentType = nil;
@@ -259,17 +268,30 @@
     self.prac = [NSMutableArray array];
     self.lab = [NSMutableArray array];
     self.KSR = [NSMutableArray array];
-    
+    self.bloc = [NSMutableArray array];
     float progress = 0.0f;
     
     NSInteger dayNum = 2;
     HTMLElement *day;
     
     while (YES) {
-        
+
+        if (self.exit) {
+            break;
+        }
         day = [home firstNodeMatchingSelector:[NSString stringWithFormat:@"#Grid > tbody > tr:nth-child(%ld) > td.VedRow1",(long)dayNum]];
         
         if ([day.attributes.allValues.firstObject isEqualToString:@"VedRow1"]) {
+            
+            NSNumber *num = @([day.attributes.allValues.lastObject intValue]);
+            NSInteger numInt = [num integerValue];
+            if (numInt == 0) {
+                numInt = 1;
+            }
+            for (NSInteger i = 0; i<numInt; i++){
+                [self.bloc addObject: day.textContent];
+            }
+            
             // 1
             day = [home firstNodeMatchingSelector:[NSString stringWithFormat:@"#Grid > tbody > tr:nth-child(%ld) > td:nth-child(2)",(long)dayNum]];
             if (day == nil) {
@@ -652,7 +674,6 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
         return [self.numbers count];
-//    return [self.name count];
 }
 
 
@@ -663,7 +684,6 @@
     
         NSNumber *num = self.numbers[indexPath.row];
         NSInteger i = [num integerValue];
-//    NSInteger i = indexPath.row;
     
     cell.nameLabel.text = [NSString stringWithFormat:@"%@",  self.name[i]];
     cell.allTimeLabel.text = [NSString stringWithFormat:@"Всего часов: %@",  self.allTime[i]];
@@ -671,7 +691,8 @@
     cell.typeLabel.text = [NSString stringWithFormat:@"Вид контроля: %@ %@ %@ %@",  self.typeExam[i],self.typeCredit[i],self.typeCP[i],self.typeCR[i]];
     cell.lecAndPracLabel.text = [NSString stringWithFormat:@"Лекций: %@     Практик: %@",self.lec[i],self.prac[i]];
     cell.labAndKSRLabel.text = [NSString stringWithFormat:@"Лабораторных: %@    КСР: %@",self.lab[i],self.KSR[i]];
-    
+    cell.blocLabel.text = [NSString stringWithFormat:@"Блок: %@",self.bloc[i]];
+
     if (self.external == YES) {
         cell.courseAndSessionLabel.text = [NSString stringWithFormat:@"Курс: %@     Сессия: %@",  self.course[i],self.session[i]];
     }else{

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TableViewTeacher : UITableViewController
+@interface TableViewTeacher : UITableViewController <UISearchResultsUpdating>
 
 @property (nonatomic, strong) NSString *nameSize;
 

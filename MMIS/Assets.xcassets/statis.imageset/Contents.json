@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "Без имени-3.png",
+      "filename" : "statis.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "Без имени-4.png",
+      "filename" : "statis@2.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "Без имени-5.png",
+      "filename" : "statis@3.png",
       "scale" : "3x"
     }
   ],

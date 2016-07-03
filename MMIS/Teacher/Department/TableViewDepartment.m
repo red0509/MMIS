@@ -17,7 +17,8 @@
 @property (strong,nonatomic) NSMutableArray *name;
 @property (strong,nonatomic) NSMutableArray *ref;
 
-
+@property (strong, nonatomic) NSMutableArray *searchResult;
+@property (strong,nonatomic) UISearchController *resultSearchController ;
 @end
 
 @implementation TableViewDepartment
@@ -37,11 +38,24 @@
     UIBarButtonItem *leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:image style:UIBarButtonItemStylePlain target:self action:@selector(slideMenu)];
     self.navigationItem.leftBarButtonItem = leftBarButtonItem;
     
+    self.searchResult = [NSMutableArray arrayWithCapacity:[self.name count]];
+    self.resultSearchController = [[UISearchController alloc]initWithSearchResultsController:nil];
+    self.resultSearchController.searchResultsUpdater = self;
+    self.resultSearchController.dimsBackgroundDuringPresentation = NO;
+    self.resultSearchController.searchBar.placeholder = @"Поиск";
+    self.resultSearchController.searchBar.tintColor = [UIColor whiteColor];
+    [self.resultSearchController.searchBar sizeToFit];
+    self.tableView.tableHeaderView = self.resultSearchController.searchBar;
+    self.definesPresentationContext = YES;
 }
 
 -(void) slideMenu{
     
     [[SlideNavigationController sharedInstance] toggleLeftMenu];
+}
+
+-(void)dealloc {
+    [self.resultSearchController.view removeFromSuperview];
 }
 
 - (BOOL)slideNavigationControllerShouldDisplayLeftMenu
@@ -128,7 +142,14 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [self.name count];
+    if (self.resultSearchController.active)
+    {
+        return [self.searchResult count];
+    }
+    else
+    {
+        return [self.name count];
+    }
 }
 
 
@@ -140,8 +161,14 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
     }
     
-    cell.textLabel.text = self.name[indexPath.row];
-
+    if (self.resultSearchController.active)
+    {
+        cell.textLabel.text = [self.searchResult objectAtIndex:indexPath.row];
+    }
+    else
+    {
+        cell.textLabel.text = self.name[indexPath.row];
+    }
     
     return cell;
     
@@ -151,9 +178,36 @@
     
     TableViewTeacher * tableViewTeacher = [self.storyboard instantiateViewControllerWithIdentifier:@"TableViewTeacher"];
     
-    tableViewTeacher.nameSize = [NSString stringWithFormat:@"http://stud.sssu.ru%@",self.ref[indexPath.row]];
-    
+    if (self.resultSearchController.active)
+    {
+        for (int i = 0; i < [self.name count]; i++) {
+            if ([self.name[i] isEqualToString:self.searchResult[indexPath.row]]) {
+
+                tableViewTeacher.nameSize = [NSString stringWithFormat:@"http://stud.sssu.ru%@",self.ref[i]];
+                 NSLog(@"%@",self.name[i]);
+            }
+        }
+       
+    }
+    else
+    {
+        tableViewTeacher.nameSize = [NSString stringWithFormat:@"http://stud.sssu.ru%@",self.ref[indexPath.row]];
+        NSLog(@"%@",self.name[indexPath.row]);
+    }
     [self.navigationController pushViewController:tableViewTeacher animated:YES];
+    
+}
+
+#pragma mark - UISearchResultsUpdating
+
+- (void)updateSearchResultsForSearchController:(UISearchController *)searchController{
+    
+    [self.searchResult removeAllObjects];
+    
+    NSPredicate *resultPredicate = [NSPredicate predicateWithFormat:@"SELF contains[c] %@", searchController.searchBar.text];
+    
+    self.searchResult = [NSMutableArray arrayWithArray: [self.name filteredArrayUsingPredicate:resultPredicate]];
+    [self.tableView reloadData];
     
 }
 
